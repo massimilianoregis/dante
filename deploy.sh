@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "deploy.sh execution..."
+echo $TRAVIS_BRANCH
 gitLastCommit=$(git show --summary --grep="Merge pull request")
 if [[ -z "$gitLastCommit" ]]
 then
@@ -23,10 +24,13 @@ else
 		if [ "$f" != ".travis.yml" ] && [ "$f" != "deploy.sh" ] && [ "$f" != "test.js" ] && [ "$f" != "package.json" ]
 		then
 	 		echo "Uploading $f"
-	 		if [ "$TRAVIS_BRANCH" == "master" ]
+	 		if [ "$TRAVIS_BRANCH" == "master" ] 
+	 		then
 		 		curl --ftp-create-dirs -T $f -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/dantes/$f
 		 	fi
-		 	if [ "$TRAVIS_BRANCH" == "develop" ]
+
+		 	if [ "$TRAVIS_BRANCH" == "develop" ] 
+		 	then
 		 		curl --ftp-create-dirs -T $f -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/dantesTest/$f
 		 	fi
 		fi
