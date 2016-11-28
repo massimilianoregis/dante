@@ -5,6 +5,7 @@ node_js:
 branches:
   only:
     - master
+    - develop
 #env:
 #  global:
 #  - secure: h6i/QFDLprVJe7u/ZT...
