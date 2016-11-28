@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "deploy.sh execution..."
 gitLastCommit=$(git show --summary --grep="Merge pull request")
 if [[ -z "$gitLastCommit" ]]
 then
@@ -30,3 +30,4 @@ else
 		fi
 	done
 fi
+echo "/deploy.sh execution"
