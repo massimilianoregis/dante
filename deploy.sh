@@ -25,8 +25,10 @@ else
 	 		echo "Uploading $f"
 	 		if [ "$TRAVIS_BRANCH" == "master" ]
 		 		curl --ftp-create-dirs -T $f -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/dantes/$f
+		 	fi
 		 	if [ "$TRAVIS_BRANCH" == "develop" ]
 		 		curl --ftp-create-dirs -T $f -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/dantesTest/$f
+		 	fi
 		fi
 	done
 fi
