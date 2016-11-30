@@ -23,11 +23,10 @@ fi
 
 if [ "$TRAVIS_BRANCH" == "develop" ] 
 then
-baseDir="dantesTest"
+	baseDir="dantesTest"
 fi
 
 initCommit=""
-
 initCommit=$(curl --ftp-create-dirs -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/$baseDir/lastCommit)
 echo $lastCommit > "lastCommit"
 curl --ftp-create-dirs -T lastCommit -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/$baseDir/lastCommit
