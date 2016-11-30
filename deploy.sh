@@ -26,7 +26,6 @@ then
 baseDir="dantesTest"
 fi
 
-lastCommit="lastlast"
 initCommit=""
 
 initCommit=$(curl --ftp-create-dirs -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/$baseDir/lastCommit)
