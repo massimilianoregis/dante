@@ -3,10 +3,10 @@
     <head>
         <!-- Basic -->
         <meta charset="utf-8">
-        <title>Travelia - Travel Agency, Responsive - Hotel Online Booking</title>
+        <title>Dante's Embassy - Travel Agency</title>
         <meta name="keywords" content="HTML5 Template" />
         <meta name="description" content="World Cup - Responsive HTML5 Template soccer and sports">
-        <meta name="author" content="iwthemes.com">  
+        <meta name="author" content="iwthemes.com">
 
         <!-- Mobile Metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
         <link rel="shortcut icon" href="img/icons/favicon.ico">
         <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">  
+        <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-touch-icon-114x114.png">
 
         <!-- Head Libs -->
         <script src="js/modernizr.js"></script>
@@ -35,234 +35,73 @@
             <script src="js/responsive/respond.js"></script>
         <![endif]-->
     </head>
+
+    <style>
+      .item-boxed.image-boxed
+        {
+        height: 255px;
+        }
+      .item-boxed.image-boxed a,.image-boxed i
+        {
+        display: none
+        }
+      .price,.starts,.content-btn
+        {
+        display: none;
+        }
+      .overlay
+        {
+        display: none;
+        }
+      .services-lines-info a
+        {
+        display: none;
+        }
+      #testimonials_box
+      {
+        display: none;
+      }
+    </style>
+
+
     <body>
         <!--Preloader-->
         <div class="preloader">
             <div class="status">&nbsp;</div>
         </div>
         <!--End Preloader-->
-    
-        <!-- Theme-options -->
-        <div id="theme-options">
-            <div class="openclose"></div>
-            <div class="title">
-               <span>THEME OPTIONS</span>
-               <p>Choose a combination of predefined colors here. Here are some examples. You can create any additional number on your backend theme, also can choose the background you want and four differents layouts.</p>
-            </div>
-            <span>SKINS</span>
-            <ul id="colorchanger">      
-                <li><a class="colorbox red" href="?theme=red" title="Red Skin"></a></li>
-                <li><a class="colorbox blue" href="?theme=blue" title="Blue Skin"></a></li>                    
-                <li><a class="colorbox yellow" href="?theme=yellow" title="Yellow Skin"></a></li>
-                <li><a class="colorbox green" href="?theme=green" title="Green Skin"></a></li>
-                <li><a class="colorbox orange" href="?theme=orange" title="Orange Skin"></a></li>
-                <li><a class="colorbox purple" href="?theme=purple" title="Purple Skin"></a></li>
-                <li><a class="colorbox pink" href="?theme=pink" title="Pink Skin"></a></li>
-                <li><a class="colorbox cocoa" href="?theme=cocoa" title="Cocoa Skin"></a></li>
-            </ul>
-            <span>LAYOUT STYLE</span>
-            <ul class="layout-style">      
-                <li class="wide">Wide</li>
-                <li class="semiboxed active">Semiboxed</li> 
-                <li class="boxed">Boxed</li> 
-                <li class="boxed-margin">Boxed Margin</li>               
-            </ul>               
-            <div class="patterns">
-                <span>BACKGROUND PATTERNS</span>
-                <ul class="backgrounds">
-                    <li class="bgnone" title="None - Default"></li>
-                    <li class="bg1"></li>
-                    <li class="bg2"></li>
-                    <li class="bg3"></li>
-                    <li class="bg4 "></li>
-                    <li class="bg5"></li> 
-                    <li class="bg6"></li>
-                    <li class="bg7"></li>
-                    <li class="bg8"></li>
-                    <li class="bg9 "></li>
-                    <li class="bg10"></li> 
-                    <li class="bg11"></li> 
-                    <li class="bg12"></li> 
-                    <li class="bg13"></li> 
-                    <li class="bg14"></li> 
-                    <li class="bg15"></li> 
-                    <li class="bg16"></li> 
-                    <li class="bg17"></li> 
-                    <li class="bg18"></li> 
-                    <li class="bg19"></li> 
-                    <li class="bg20"></li> 
-                    <li class="bg21"></li> 
-                    <li class="bg22"></li> 
-                    <li class="bg23"></li> 
-                    <li class="bg24"></li> 
-                    <li class="bg25"></li> 
-                    <li class="bg26"></li>                   
-                </ul>  
-            </div>
-        </div>
-        <!-- End Theme-options -->      
 
         <!-- layout-->
         <div id="layout">
             <!-- Header-->
             <header id="header" class="header-v1">
                 <!-- Main Nav -->
-                <nav class="flat-mega-menu">            
+                <nav class="flat-mega-menu">
                     <!-- flat-mega-menu class -->
                     <label for="mobile-button"> <i class="fa fa-bars"></i></label><!-- mobile click button to show menu -->
-                    <input id="mobile-button" type="checkbox">                          
+                    <input id="mobile-button" type="checkbox">
 
                     <ul class="collapse"><!-- collapse class for collapse the drop down -->
                         <!-- website title - Logo class -->
                         <li class="title">
-                            <a href="index.html"><span>T</span>ravelia<span>.</span></a> 
-                            <i class="fa fa-rocket"></i>
+                          <img src="img/logoDante.png" style="height: 57px;position: relative; float: left;">
+                          <a href="index.html" style="width: 0%"><span>Dante's</span>Embassy<span>.</span></a>
                         </li>
                         <!-- End website title - Logo class -->
 
-                        <li><a href="index.html">HOME</a>
-                            <div class="drop-down two-column hover-fade"><!-- drop down with two columns -->
-                                <ul><!-- column one -->
-                                    <li><a href="index.html">Home Version 1</a></li>
-                                    <li><a href="index-v2.html">Home Version 2</a></li>
-                                    <li><a href="index-v3.html">Home Version 3</a></li>
-                                    <li><a href="index-v4.html">Home Version 4</a></li>
-                                </ul>
-                                
-                                <ul><!-- column two -->
-                                    <li><a href="hotel-index.html">Home Hotels</a> </li>
-                                    <li> <a href="flight-index.html">Home Flights</a> </li>
-                                </ul>
-                            </div>
-                        </li>
-                        
-                        <li> <a href="hotel-index.html">HOTELS</a>
-                            <ul class="drop-down one-column hover-fade"><!-- first level drop down -->
-                                <li><a href="hotel-index.html">Home Hotels</a></li>
-                                <li><a href="hotel-list-view.html">List View</a></li>
-                                <li><a href="hotel-grid-view.html">Grid View</a></li>
-                                <li><a href="hotel-detailed.html">Detailed</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="index.html">HOME</a></li>
 
-                        <li> <a href="template-about-1.html">ABOUT US</a>
-                            <ul class="drop-down one-column hover-fade"><!-- first level drop down -->
-                                <li><a href="template-about-1.html">About Us 1</a> </li>
-                                <li><a href="template-about-2.html">About us 2</a> </li>
-                            </ul>
-                        </li>
+                      <!--
+                      <li><a href="template-about-2.html">ABOUT US</a></li>
 
-                        <li> <a href="template-service-1.html">SERVICES</a>
-                            <ul class="drop-down one-column hover-fade"><!-- first level drop down -->
-                                <li><a href="template-service-1.html">Services 1</a> </li>
-                                <li><a href="template-service-2.html">Services 2</a> </li>
-                            </ul>
-                        </li>
+                      <li><a href="template-blog-right.html">BLOG</a></li>
 
-                        <li> <a href="template-gallery-4.html">GALLERY</a>
-                            <ul class="drop-down one-column hover-fade"><!-- first level drop down -->
-                                <li><a href="template-gallery-4.html">Gallery 4 Column</a> </li>
-                                <li><a href="template-gallery-3.html">Gallery 3 Columns</a> </li>
-                                <li><a href="template-gallery-2.html">Gallery 2 Columns</a> </li>
-                            </ul>
-                        </li>
+                      <li><a href="template-gallery-2.html">GALLERY</a></li>
+                      -->
 
-                        <li> <a href="#">PACKAGES</a> 
-                            <div class="drop-down full-width hover-fade"><!-- full width drop down with 4 columns + images -->
-                                <ul><!-- column one -->
-                                    <li>
-                                        <h2><span>Punta</span> Cana</h2>
-                                        <a href="packages-index.html"><img src="img/gallery-2/1.jpg" alt="image 1"> </a> 
-                                        <p>Punta Cana is a cape located east of the Dominican Republic in the province of La Altagracia.</p>
-                                        <a href="packages-index.html" class="btn btn-primary">View Details</a>
-                                    </li>
-                                </ul>
-                                
-                                <ul><!-- column two -->
-                                    <li>
-                                        <h2><span>Santa</span> Marta</h2>
-                                        <a href="packages-index.html"><img src="img/gallery-2/2.jpg" alt="image 1"> </a> 
-                                        <p>Santa Marta, officially Tourism, Cultural and Historic District of Santa Marta is a Colombian city.</p>
-                                        <a href="packages-index.html" class="btn btn-primary">View Details</a>
-                                    </li>
-                                </ul>
-                                
-                                <ul><!-- column three -->
-                                    <li>
-                                        <h2><span>Isla</span> de San Andres</h2>
-                                        <a href="packages-index.html"><img src="img/gallery-2/3.jpg" alt="image 1"> </a> 
-                                        <p>San Andres Island is the largest of the islands forming part of the Archipelago of San Andrés.</p>
-                                        <a href="packages-index.html" class="btn btn-primary">View Details</a>
-                                    </li>
-                                </ul>
-                                
-                                <ul><!-- column four -->
-                                    <li>
-                                        <h2><span>Cartagena</span> de Indias</h2>
-                                        <a href="packages-index.html"><img src="img/gallery-2/4.jpg" alt="image 1"> </a> 
-                                        <p>Cartagena de Indias, officially Tourist and Cultural District of Cartagena de Indias Cartagena de Indias abbreviated.</p>
-                                        <a href="packages-index.html" class="btn btn-primary">View Details</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                        <li><a href="contact.html">CONTACT</a></li>
 
-                        <li> <a href="template-about-1.html">FEATURES</a> 
-                            <div class="drop-down full-width hover-fade"><!-- full width drop down with 4 columns -->
-                                <ul><!-- column One -->
-                                    <li><h2>Templates</h2></li>
-                                    <li><a href="template-about-1.html">About Us 1</a> </li>
-                                    <li><a href="template-about-2.html">About us 2</a> </li>
-                                    <li><a href="template-service-1.html">Services 1</a> </li>
-                                    <li><a href="template-service-2.html">Services 2</a> </li>
-                                    <li><a href="template-gallery-4.html">Gallery 4 Column</a> </li>
-                                    <li><a href="template-gallery-3.html">Gallery 3 Columns</a> </li>
-                                    <li><a href="template-gallery-2.html">Gallery 2 Columns</a> </li>
-                                    <li><a href="template-blog-right.html">Blog Right Sidebar</a> </li>
-                                    <li><a href="template-blog-left.html">Blog Left Sidebar</a> </li>
-                                </ul>
-                                
-                                <ul><!-- column Two -->
-                                    <li><h2>Templates</h2></li>
-                                    <li><a href="template-blog-full.html">Blog Full Width</a> </li>
-                                    <li><a href="template-blog-read.html">Blog Read</a> </li>
-                                    <li><a href="template-faq.html">Page Faq Questions</a> </li>
-                                    <li><a href="page-full-widht.html">Page Full Widht</a> </li>
-                                    <li><a href="page-left.html">Page Left Sidebar</a> </li>
-                                    <li><a href="page-right.html">Page Right Sidebar</a> </li>
-                                    <li><a href="page-404.html">Page 404</a> </li>
-                                    <li><a href="page-site-map.html">Page Site Map</a> </li>
-                                    <li><a href="princing-tables.html">Princing tables</a> </li>
-                                </ul>
-
-                                <ul><!-- column three -->
-                                    <li><h2>Features</h2></li>
-                                    <li><a href="feature-header-1.html">Header Version 1</a> </li>
-                                    <li><a href="feature-header-2.html">Header Version 2</a> </li>
-                                    <li><a href="feature-header-3.html">Header Version 3</a> </li>
-                                    <li><a href="feature-header-4.html">Header Version 4</a> </li>
-                                    <li><a href="feature-footer-1.html#footer">Footer Version 1</a> </li>
-                                    <li><a href="feature-footer-2.html#footer">Footer Version 2</a> </li>
-                                    <li><a href="feature-footer-3.html#footer">Footer Version 3</a> </li>
-                                    <li><a href="feature-footer-4.html#footer">Footer Version 4</a> </li>
-                                    <li><a href="feature-background-sections.html">Background sections</a> </li>
-                                </ul>
-
-                                <ul><!-- column four -->
-                                    <li><h2>Elements</h2></li>
-                                    <li><a href="feature-grid-system.html">Grid System</a> </li>
-                                    <li><a href="feature-typograpy.html">Typograpy</a> </li>
-                                    <li><a href="feature-icons.html">Icons</a> </li>
-                                    <li class="icon-big-nav"><i class="fa fa-rocket"></i></li><!-- Icon big nav -->
-                                </ul>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">CONTACT</a>
-                        </li>
-
-                        <li class="social-bar"> <a href="#">FOLLOW US</a> 
+                        <li class="social-bar"> <a href="#">FOLLOW US</a>
                             <ul class="drop-down hover-zoom">
                                 <li> <a href="#" target="_blank"><i class="fa fa-flickr"></i> </a> </li>
                                 <li> <a href="#" target="_blank"><i class="fa fa-instagram"></i> </a> </li>
@@ -272,7 +111,7 @@
                                 <li> <a href="#" target="_blank"><i class="fa fa-pinterest"></i> </a> </li>
                             </ul>
                         </li>
-                        
+
                         <li class="login-form"> <i class="fa fa-user"></i><!-- login form -->
                             <ul class="drop-down hover-expand">
                                 <li>
@@ -280,12 +119,12 @@
                                         <table>
                                             <tr>
                                                 <td colspan="2">
-                                                    <input type="email" required="required" name="email" placeholder="Your email address"> 
+                                                    <input type="email" required="required" name="email" placeholder="Your email address">
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td colspan="2"> 
-                                                    <input type="password" required="required" name="password" placeholder="Password"> 
+                                                <td colspan="2">
+                                                    <input type="password" required="required" name="password" placeholder="Password">
                                                 </td>
                                             </tr>
                                             <tr>
@@ -296,7 +135,7 @@
                                     </form>
                                 </li>
                             </ul>
-                        </li>  
+                        </li>
 
                         <li class="search-bar"> <i class="fa fa-search"></i><!-- search bar -->
                             <ul class="drop-down hover-expand">
@@ -311,19 +150,19 @@
                                     </form>
                                 </li>
                             </ul>
-                        </li>           
+                        </li>
                     </ul>
                 </nav>
                 <!-- Main Nav -->
             </header>
             <!-- End Header-->
 
-            <!-- Slide And Filter Section-->    
+            <!-- Slide And Filter Section-->
             <section class="tp-banner-container">
                 <!-- SLIDE  -->
                 <div class="tp-banner" >
                     <!-- SLIDES CONTENT-->
-                    <ul> 
+                    <ul>
                         <!-- SLIDE  -->
                         <li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
                             <!-- MAIN IMAGE -->
@@ -351,9 +190,45 @@
                             <img src="img/slide/4.jpg"  alt="fullslide1" data-bgposition="left center" data-kenburns="on" data-duration="6000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
                             <!-- LAYERS -->
                         </li>
-                    </ul> 
-                    <!-- END SLIDES  --> 
-                    <div class="tp-bannertimer"></div>  
+                      <!-- SLIDE  -->
+                      <li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                        <!-- MAIN IMAGE -->
+                        <img src="img/slide/5.jpg"  alt="fullslide1" data-bgposition="left center" data-kenburns="on" data-duration="6000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                        <!-- LAYERS -->
+                      </li>
+                      <!-- SLIDE  -->
+                      <li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                        <!-- MAIN IMAGE -->
+                        <img src="img/slide/6.jpg"  alt="fullslide1" data-bgposition="left center" data-kenburns="on" data-duration="6000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                        <!-- LAYERS -->
+                      </li>
+                      <!-- SLIDE  -->
+                      <li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                        <!-- MAIN IMAGE -->
+                        <img src="img/slide/7.jpg"  alt="fullslide1" data-bgposition="left center" data-kenburns="on" data-duration="6000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                        <!-- LAYERS -->
+                      </li>
+                      <!-- SLIDE  -->
+                      <li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                        <!-- MAIN IMAGE -->
+                        <img src="img/slide/8.jpg"  alt="fullslide1" data-bgposition="left center" data-kenburns="on" data-duration="6000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                        <!-- LAYERS -->
+                      </li>
+                      <!-- SLIDE  -->
+                      <li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                        <!-- MAIN IMAGE -->
+                        <img src="img/slide/9.jpg"  alt="fullslide1" data-bgposition="left center" data-kenburns="on" data-duration="6000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                        <!-- LAYERS -->
+                      </li>
+                      <!-- SLIDE  -->
+                      <li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                        <!-- MAIN IMAGE -->
+                        <img src="img/slide/10.jpg"  alt="fullslide1" data-bgposition="left center" data-kenburns="on" data-duration="6000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                        <!-- LAYERS -->
+                      </li>
+                    </ul>
+                    <!-- END SLIDES  -->
+                    <div class="tp-bannertimer"></div>
                 </div>
                  <!-- SLIDE CONTENT-->
 
@@ -365,30 +240,45 @@
                         <p class="lead">Book cheap hotels and make payment facilities, free cancellation when the hotel so provides, compare prices and find all the options for your vacation.</p>
                     </div>
                     <!-- END TITLE HEADER-->
-
-                    <!-- FILTER HEADER-->
-                    <div class="filter-header">
-                        <form action="#">
-                            <input type="text" required="required" placeholder="Where do you want to go?" class="input-large">
-                            <input type="text" required="required" placeholder="Check In" class="date-input">
-                            <input type="text" required="required" placeholder="Check Out" class="date-input">
-                            <div class="selector">
-                                <select class="guests-input">
-                                    <option value="1">1 Guests</option>
-                                    <option value="2">2 Guests</option>
-                                    <option value="3">3 Guests</option>
-                                    <option value="4">4 Guests</option>
-                                    <option value="5">5+ Guests</option>
-                                </select>
-                                <span class="custom-select">Guests</span>
+                  <div class="row">
+                    <!-- Newsletter-->
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                      <form class="newsletterForm" action="php/mailchip/newsletter-subscribe.php">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </span>
+                              <input class="form-control" placeholder="Your Name" name="name" type="text" required="required">
                             </div>
-                            <input type="submit" value="Search">
-                        </form>
+                          </div>
+                          <div class="col-md-5">
+                            <div class="input-group">
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </span>
+                              <input class="form-control" placeholder="Your  Email" name="email" type="email" required="required">
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="submit" name="subscribe">SIGN UP</button>
+                                                </span>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="result-newsletter"></div>
                     </div>
-                    <!-- END FILTER HEADER-->
+                    <!-- end Newsletter-->
+                    <div class="col-md-2"></div>
+                  </div>
+
+
                 </div>
                 <!-- END FILTERHEADER - TITLE HEADER -->
-            </section>       
+            </section>
             <!-- End Slide And Filter Section-->
 
             <!--Content Central -->
@@ -400,45 +290,99 @@
                 <!-- End Shadow Semiboxed Layout -->
 
                 <!-- End content info - Services Items-->
-                <div class="content_info">
+                <div id="testimonial" class="content_info">
                     <div class="content_resalt">
                         <div class="container">
                             <div class="row">
                                 <!-- Info Resalt - Info Services -->
                                 <div class="col-md-4 ">
                                     <div class="services-lines-info">
-                                        <h2>WELCOME TO THEME TRAVELIA</h2>
+                                        <h2>WELCOME to the Dante's Embassy</h2>
                                         <p class="lead">
-                                            Book cheap hotels and make payment facilities.
-                                            <span class="line"></span>
+                                          With us you will not try trips but emotions.
+                                          A new way to realize their dreams without forgetting that life is made up of memories, magic moments and happy encounters.
+                                          <span class="line"></span>
                                         </p>
-
-                                        <p>Find a wide variety of airline tickets and cheap flights, hotels, tour packages, car rentals, cruises and more in travelia.com.You can choose your favorite destination and start planning your long-awaited vacation. You can also check availability of flights. </p>
+                                        <p>
+                                          A trip is not just a logo to see, are flavors to taste, to know cultures, feelings to be collected in one's heart.
+                                          For this reason we want to meet you and you Embassy Dante advise you on your trip.
+                                        </p>
                                     </div>
-                                </div>   
-                                <!-- End Info Resalt - Info Services --> 
+                                </div>
+                                <!-- End Info Resalt - Info Services -->
 
                                 <!-- Services Items -->
                                 <div class="col-md-8">
                                     <ul class="services-lines">
-                                        <li>
+                                      <li>
+                                        <div class="item-service-line">
+                                          <i class="fa fa-bicycle"></i>
+                                          <span class="glyphicons glyphicons-camping"></span>
+                                          <h5>Adventure & Sport</h5>
+                                        </div>
+                                      </li>
+
+                                      <li>
+                                        <div class="item-service-line">
+                                          <i class="fa fa-user-secret"></i>
+                                          <h5>Hidden journey</h5>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="item-service-line">
+                                          <i class="fa fa-fort-awesome"></i>
+                                          <i class="fa fa-heart"></i>
+                                          <h5>Relax & Romantic</h5>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="item-service-line">
+                                          <i class="fa fa-book"></i>
+                                          <span class="glyphicons glyphicons-tower"></span>
+                                          <h5>Culture & Art</h5>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="item-service-line">
+                                          <span class="glyphicons glyphicons-celebration"></span>
+                                          <i class="fa fa-cutlery"></i>
+                                          <h5>Food & Drink</h5>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="item-service-line">
+                                          <i class="fa fa-home"></i>
+                                          <span class="glyphicons glyphicons-family"></span>
+                                          <h5>Family</h5>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="item-service-line">
+                                          <i class="fa fa-star"></i>
+                                          <h5>Private Guide</h5>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="item-service-line">
+                                          <i class="fa fa-briefcase"></i>
+                                          <h5>Travel Business </h5>
+                                        </div>
+                                      </li>
+
+                                      <!--
+                                      <li>
                                             <div class="item-service-line">
-                                                <i class="fa fa-bicycle"></i>
+
                                                 <h5>Special Activities</h5>
                                             </div>
                                         </li>
                                          <li>
                                             <div class="item-service-line">
-                                                <i class="fa fa-plane"></i>
+                                                <i class="fa-user-secret"></i>
                                                 <h5>Travel Arrangements</h5>
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="item-service-line">
-                                                <i class="fa fa-user"></i>
-                                                <h5>Private Guide</h5>
-                                            </div>
-                                        </li>
+
                                         <li>
                                             <div class="item-service-line">
                                                 <i class="fa fa-search-plus"></i>
@@ -469,14 +413,15 @@
                                                 <h5>Best Travel Agent</h5>
                                             </div>
                                         </li>
+                                        -->
                                     </ul>
-                                </div> 
-                                <!-- End Services Items --> 
+                                </div>
+                                <!-- End Services Items -->
                             </div>
                         </div>
                     </div>
-                </div>   
-                <!-- End content info - Services Items --> 
+                </div>
+                <!-- End content info - Services Items -->
 
                 <!-- End content info - Vacations Destinatios-->
                 <div class="content_info">
@@ -484,10 +429,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="titles">
-                                <h2>The <span>Popular</span> Destinations </h2>
+                                <h2>The <span>Best</span> Destinations </h2>
                                 <i class="fa fa-bicycle"></i>
                                 <hr class="tall">
-                            </div>                    
+                            </div>
                         </div>
                     </div>
                     <!-- End Title-->
@@ -503,11 +448,14 @@
                             </div>
                             <div class="info-boxed boxed-top">
                                 <h3>
-                                    Hot Baloon Special Journey<br>
-                                    <span>DPM, CBE, TAMILNADU</span>
+                                   Siena<br>
+                                    <span>Toscana - Italy</span>
                                 </h3>
                                 <hr class="separator">
-                                <p>The Royal National is in London near Covent Garden.</p>
+                                <p>
+                                  UNESCO a World Heritage Site.
+                                  Siena is famous for its cuisine, art, museums, medieval cityscape and the Palio.
+                                </p>
                                 <ul class="starts">
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -530,11 +478,13 @@
                             </div>
                             <div class="info-boxed boxed-top">
                                 <h3>
-                                    The Grand Canyons<br>
-                                    <span>PEELAMEDU, CBE, INDIA</span>
+                                    Ivrea<br>
+                                    <span>Piemonte - Italy</span>
                                 </h3>
                                 <hr class="separator">
-                                <p>The Holiday Inn Bilbao is in a prime location next to the Basilica of Begoña.</p>
+                                <p>
+                                  The Battle of the Oranges. It is the largest food fight in Italy.
+                                </p>
                                 <ul class="starts">
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -543,7 +493,7 @@
                                     <li><a href="#"><i class="fa fa-star-half-empty"></i></a></li>
                                 </ul>
                                 <div class="content-btn"><a href="hotel-detailed.html" class="btn btn-primary">View Details</a></div>
-                                <div class="price"><span>$</span> 65</div>
+                                <!--<div class="price"><span>$</span> 65</div>-->
                             </div>
                         </div>
                         <!-- End Item-boxe-->
@@ -552,11 +502,11 @@
                         <div class="item-boxed">
                             <div class="info-boxed boxed-bottom">
                                 <h3>
-                                    Weekdays in Thailand<br>
-                                    <span>PEELAMEDU, CBE, INDIA</span>
+                                    Trento<br>
+                                    <span>Trentino-Alto Adige - Italy</span>
                                 </h3>
                                 <hr class="separator">
-                                <p>The spacious rooms have a bathroom with hairdryer, direct dial telephone.</p>
+                                <p>Fier di S. Lucia. Christmas Village with products of traditional craftsmanship.</p>
                                 <ul class="starts">
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -579,11 +529,11 @@
                         <div class="item-boxed">
                             <div class="info-boxed boxed-bottom">
                                 <h3>
-                                    Peek Mountain View<br>
-                                    <span>LAS VEGAS, NEVADA</span>
+                                    San Nicola di Tremiti - Gargano<br>
+                                    <span>Puglia - Italy</span>
                                 </h3>
                                 <hr class="separator">
-                                <p>The Golden Bay, heated and opened in 2003, with a total of 380 rooms.</p>
+                                <p>Marine Nature Reserve Tremiti Islands and the Gargano National Park.</p>
                                 <ul class="starts">
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
                                     <li><a href="#"><i class="fa fa-star"></i></a></li>
@@ -603,8 +553,8 @@
                         <!-- End Item-boxe-->
                     </div>
                     <!-- End content-boxes-->
-                </div>   
-                <!-- End content info - Vacations Destinatios--> 
+                </div>
+                <!-- End content info - Vacations Destinatios-->
 
                 <!-- End content info - Features-->
                 <div class="content_info">
@@ -612,10 +562,14 @@
                     <div class="container">
                         <div class="row">
                             <div class="titles">
-                                <h2><span>¿</span>Why <span>Book</span> in travelia<span>?</span></h2>
-                                <i class="fa fa-plane"></i>
-                                <hr class="tall">
-                            </div>                    
+                                <h2><span>Dante's Embassy</span> you want to know</h2>
+                              <div>
+                                  <a id="btnTest" href="https://docs.google.com/a/ekaros.it/forms/d/e/1FAIpQLSdh7LCzu8tVD-Q06hLkAdB1-ZVtmGUlU7tcvCXXubHlUqYJ0A/viewform" class="btn btn-primary">
+                                  <i class="fa fa-gift"></i>Quiz
+                                  </a>
+                              </div>
+                              <hr class="tall">
+                            </div>
                         </div>
                     </div>
                     <!-- End Title-->
@@ -637,7 +591,7 @@
                                         <span>discount</span>
                                     </div>
                                     <div class="info-feature">
-                                        <p>For over 4 years offering the best plans at the best price with exclusive discounts.</p> 
+                                        <p>For over 4 years offering the best plans at the best price with exclusive discounts.</p>
                                     </div>
                                 </div>
                             </div>
@@ -668,7 +622,7 @@
                                         <br>
                                         <div class="title-feature">
                                             <i class="fa fa-check right-icon"></i>
-                                            the price 
+                                            the price
                                         </div>
                                         <br>
                                         <span>+ low</span>
@@ -681,144 +635,16 @@
                         </div>
                     </div>
                     <!-- End content-->
-                </div>   
-                <!-- End content info - Features--> 
+                </div>
+                <!-- End content info - Features-->
 
                 <!-- End Promotion Boxes - Parallax Section -->
                 <div class="content_info">
                     <!-- Parallax Background -->
                     <div class="bg_parallax image_04_parallax"></div>
                     <!-- Parallax Background -->
-
-                    <!-- Content Parallax-->
-                    <div class="opacy_bg_02 padding-bottom">
-                        <!-- Title -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="titles">
-                                    <h2>The <span>Promotions</span> Bonus</h2>
-                                    <i class="fa fa-money"></i>
-                                    <hr class="tall">
-                                </div>                    
-                            </div>
-                        </div>
-                        <!-- End Title-->
-
-                        <!-- content-->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-3">
-                                    <!-- promotion-box-->
-                                    <div class="promotion-box">
-                                        <div class="promotion-box-header">
-                                            <img src="img/sponsors/1.png" alt="img">
-                                        </div>
-
-                                        <div class="promotion-box-center color-1">
-                                           <div class="prince">
-                                                30
-                                            </div>
-
-                                            <div class="percentage">
-                                                %<span>discount</span>.
-                                            </div>
-                                        </div>
-
-                                        <div class="promotion-box-info">
-                                            <p>Select a bonus 30% and access to all our discounts.</p>
-                                            <a href="#" class="btn btn-primary">View Details</a>
-                                        </div>
-                                    </div>
-                                    <!-- End promotion-box-->
-                                </div>
-
-                                <div class="col-sm-6 col-md-3">
-                                    <!-- promotion-box-->
-                                    <div class="promotion-box">
-                                        <!-- promotion-box-header-->
-                                        <div class="promotion-box-header">
-                                            <img src="img/sponsors/2.png" alt="img">
-                                        </div>
-                                        <!-- End promotion-box-header-->
-
-                                        <!-- promotion-box-center-->
-                                        <div class="promotion-box-center color-2">
-                                            <div class="prince">
-                                                70
-                                            </div>
-
-                                            <div class="percentage">
-                                                %<span>discount</span>.
-                                            </div>
-                                        </div>
-                                        <!-- End promotion-box-center-->
-
-                                        <!-- promotion-box-info-->
-                                        <div class="promotion-box-info">
-                                            <p>Select a bonus 70% and access to all our discounts.</p>
-                                            <a href="#" class="btn btn-primary">View Details</a>
-                                        </div>
-                                        <!-- End promotion-box-info-->
-                                    </div>
-                                    <!-- End promotion-box-->
-                                </div>
-
-                                <div class="col-sm-6 col-md-3">
-                                    <!-- promotion-box-->
-                                    <div class="promotion-box">
-                                        <div class="promotion-box-header">
-                                            <img src="img/sponsors/5.png" alt="img">
-                                        </div>
-
-                                        <div class="promotion-box-center color-3">
-                                            <div class="prince">
-                                                50
-                                            </div>
-
-                                            <div class="percentage">
-                                                %<span>discount</span>.
-                                            </div>
-                                        </div>
-
-                                        <div class="promotion-box-info">
-                                            <p>Select a bonus 50% and access to all our discounts.</p>
-                                            <a href="#" class="btn btn-primary">View Details</a>
-                                        </div>
-                                    </div>
-                                    <!-- End promotion-box-->
-                                </div>
-
-                                <div class="col-sm-6 col-md-3">
-                                    <!-- promotion-box-->
-                                    <div class="promotion-box">
-                                        <div class="promotion-box-header">
-                                            <img src="img/sponsors/3.png" alt="img">
-                                        </div>
-
-                                        <div class="promotion-box-center color-4">
-                                            <div class="prince">
-                                                60
-                                            </div>
-
-                                            <div class="percentage">
-                                                %<span>discount</span>.
-                                            </div>
-                                        </div>
-
-                                        <div class="promotion-box-info">
-                                            <p>Select a bonus 60% and access to all our discounts.</p>
-                                            <a href="#" class="btn btn-primary">View Details</a>
-                                        </div>
-                                    </div>
-                                    <!-- End promotion-box-->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End content-->
-                    </div>  
-                    <!-- End Content Parallax--> 
-                </div>   
-                <!-- End Promotion Boxes - Parallax Section --> 
+                </div>
+                <!-- End Promotion Boxes - Parallax Section -->
 
                 <!-- End content - Slide Features-->
                 <div class="content_info content_resalt">
@@ -836,17 +662,17 @@
                                                 <span class="line"></span>
                                             </p>
 
-                                            <p>Find a wide variety of airline tickets and cheap flights, hotels, tour packages, car rentals, cruises and more in travelia.com.You can choose your favorite destination and start planning your long-awaited vacation. You can also check availability of flights and hotels quickly and easily, in order to find the option that best suits your needs.</p>
+                                            <p>Find a wide variety of airline tickets and cheap flights, hotels, tour packages, car rentals, cruises and more in Dante's Embassy.com.You can choose your favorite destination and start planning your long-awaited vacation. You can also check availability of flights and hotels quickly and easily, in order to find the option that best suits your needs.</p>
                                             <br>
                                             <p>Book cheap hotels and make payment facilities, free cancellation when the hotel so provides, compare prices and find all the options for your vacation.</p>
                                             <br>
                                             <a href="#" class="btn btn-primary">View Details</a>
                                         </div>
-                                    </div> 
+                                    </div>
 
                                     <div class="col-md-7">
                                         <img src="img/service.png" class="img-responsive" alt="">
-                                    </div>  
+                                    </div>
                                 </div>
                             </div>
                             <!-- End content-->
@@ -854,38 +680,35 @@
                         <!-- Item Slide Features  -->
                         <li>
                             <div class="container">
-                                <div class="row padding-top">
-                                    <div class="col-md-6">
-                                        <div class="img-hover">
-                                            <div class="overlay"> <a href="img/gallery-2/2.jpg" class="fancybox"><i class="fa fa-plus-circle"></i></a></div>
-                                            <img src="img/gallery-2/2.jpg" alt="" class="img-responsive">
-                                        </div>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <img src="img/palm2.png" alt="" class="img-responsive">
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-5">
                                         <div class="services-lines-info">
                                             <h2>Explore our latest tours </h2>
                                             <p class="lead">
-                                                Select Travelia Theme And Receive our discounts by e-mail.
+                                                Select Dante's Embassy Theme And Receive our discounts by e-mail.
                                                 <span class="line"></span>
                                             </p>
 
-                                            <p>You can choose your favorite destination and start planning your long-awaited vacation. We offer thousands of destinations and have a wide variety of hotels so that you can host and enjoy your stay without problems. Book now your trip travelia.com.</p>
+                                            <p>You can choose your favorite destination and start planning your long-awaited vacation. We offer thousands of destinations and have a wide variety of hotels so that you can host and enjoy your stay without problems. Book now your trip Dante's Embassy.com.</p>
                                             <br>
                                             <a href="#" class="btn btn-primary">View Details</a>
                                         </div>
                                     </div>
-                               </div> 
+                               </div>
                                <!-- End Row  -->
-                            </div> 
+                            </div>
                             <!-- End Container  -->
                         </li>
                         <!-- End Item Slide Features  -->
                     </ul>
-                </div>   
-                <!-- End content - Slide Features--> 
-                
+                </div>
+                <!-- End content - Slide Features-->
+
                 <!-- content info - testimonials-->
-                <div class="content_info">
+                <div id="testimonials_box" class="content_info">
                     <!-- Parallax Background -->
                     <div class="bg_parallax image_02_parallax"></div>
                     <!-- Parallax Background -->
@@ -901,8 +724,8 @@
                                                 <p><i class="fa fa-quote-left"></i>The hotel is stunning, super recommended. And the treatment of its people in very good, are always attentive to the little things.<i class="fa fa-quote-right"></i></p>
 
                                                 <div class="image-testimonials">
-                                                    <img src="img/testimonials/1.jpg" alt="">                        
-                                                </div>   
+                                                    <img src="img/testimonials/1.jpg" alt="">
+                                                </div>
                                                 <h4>Jeniffer Martinez</h4>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -915,8 +738,8 @@
                                                 <p><i class="fa fa-quote-left"></i>Spectacular, excellent personal, restaurants and very good drinks, highly recommended.<i class="fa fa-quote-right"></i></p>
 
                                                 <div class="image-testimonials">
-                                                    <img src="img/testimonials/2.jpg" alt="">                        
-                                                </div>   
+                                                    <img src="img/testimonials/2.jpg" alt="">
+                                                </div>
                                                 <h4>Juan Rendon</h4>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -929,8 +752,8 @@
                                                 <p><i class="fa fa-quote-left"></i>The hotel is stunning, super recommended. And the treatment of its people in very good, are always attentive to the little things.<i class="fa fa-quote-right"></i></p>
 
                                                 <div class="image-testimonials">
-                                                    <img src="img/testimonials/3.jpg" alt="">                        
-                                                </div>   
+                                                    <img src="img/testimonials/3.jpg" alt="">
+                                                </div>
                                                 <h4>Federick Gordon</h4>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -945,7 +768,7 @@
                                 <div class="col-md-8">
                                     <div class="testimonial-info">
                                         <h2>TESTIMONIALS</h2>
-                                        <P>You can choose your favorite destination and start planning your long-awaited vacation. We offer thousands of destinations and have a wide variety of hotels so that you can host and enjoy your stay without problems. Book now your trip travelia.com.</P>
+                                        <P>You can choose your favorite destination and start planning your long-awaited vacation. We offer thousands of destinations and have a wide variety of hotels so that you can host and enjoy your stay without problems. Book now your trip Dante's Embassy.com.</P>
                                         <a href="#" class="btn btn-primary">View Details</a>
                                     </div>
                                 </div>
@@ -969,11 +792,11 @@
                             </div>
                         </div>
                     </div>
-                </div>  
-                <!-- End Twitter Section -->  
+                </div>
+                <!-- End Twitter Section -->
             </section>
             <!-- End Content Central -->
-      
+
             <!-- footer-->
             <footer id="footer" class="footer-v1">
                 <div class="container">
@@ -982,16 +805,16 @@
                         <div class="col-md-5">
                             <div class="title-footer">
                                 <h2>Save on your plans!
-                                <br> <span>Select Travelia Theme And Receive</span>
+                                <br> <span>Select Dante's Embassy Theme And Receive</span>
                                 <br> our discounts by e-mail.</h2>
                             </div>
 
-                            <p>You can choose your favorite destination and start planning your long-awaited vacation. We offer thousands of destinations and have a wide variety of hotels so that you can host and enjoy your stay without problems. Book now your trip travelia.com.</p>
+                            <p>You can choose your favorite destination and start planning your long-awaited vacation. We offer thousands of destinations and have a wide variety of hotels so that you can host and enjoy your stay without problems. Book now your trip Dante's Embassy.com.</p>
                         </div>
                         <!-- End Title Footer-->
 
                         <div class="col-md-7">
-                            <div class="row">                             
+                            <div class="row">
                                 <!-- Social Us-->
                                 <div class="col-md-3">
                                     <h3>FOLLOW US</h3>
@@ -1002,14 +825,14 @@
                                     </ul>
                                 </div>
                                 <!-- End Social Us-->
-                                
+
                                 <!-- Recent links-->
                                 <div class="col-md-5">
                                     <h3>TRAVEL SPECIALISTS </h3>
                                     <ul>
                                         <li><i class="fa fa-check"></i> <a href="#">Golf Vacations</a></li>
                                         <li><i class="fa fa-check"></i> <a href="#">Disney Parks Vacations</a></li>
-                                        <li><i class="fa fa-check"></i> <a href="#">Vacations As Advertised</a></li>                                    
+                                        <li><i class="fa fa-check"></i> <a href="#">Vacations As Advertised</a></li>
                                     </ul>
                                 </div>
                                 <!-- End Recent links-->
@@ -1026,19 +849,19 @@
                                          </li>
                                         <li class="location">
                                             <i class="fa fa-home"></i> <a href="#"> Av new stret - New York</a>
-                                        </li>                                   
+                                        </li>
                                     </ul>
                                 </div>
                                 <!-- Contact Us-->
-                            </div>  
+                            </div>
 
                             <div class="divisor"></div>
-                            
+
                             <div class="row">
                                 <!-- Newsletter-->
                                 <div class="col-md-12">
-                                    <h3>NEWSLETTER SIGN UP</h3>  
-                                    <form id="newsletterForm" action="php/mailchip/newsletter-subscribe.php">
+                                    <h3>NEWSLETTER SIGN UP</h3>
+                                    <form class="newsletterForm" action="php/mailchip/newsletter-subscribe.php">
                                         <div class="row">
                                             <div class="col-md-5">
                                                 <div class="input-group">
@@ -1062,11 +885,11 @@
                                                 </span>
                                             </div>
                                         </div>
-                                    </form>   
-                                    <div id="result-newsletter"></div>
+                                    </form>
+                                    <div class="result-newsletter"></div>
                                 </div>
                                 <!-- end Newsletter-->
-                            </div>                      
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1076,16 +899,12 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-5">
-                                <p>&copy; 2015 Travelia . All Rights Reserved.  2010 - 2015</p>
+                                <p>&copy; 2016 Dante's Embassy. All Rights Reserved.</p>
                             </div>
                             <div class="col-md-7">
                                 <!-- Nav Footer-->
                                 <ul class="nav-footer">
                                     <li><a href="index.html">HOME</a> </li>
-                                    <li><a href="hotel-index.html">HOTELS</a></li>
-                                    <li><a href="flight-index.html">FLIGHTS</a></li> 
-                                    <li><a href="car-index.html">CARS</a></li> 
-                                    <li><a href="cruice-index.html">CRUICES</a></li>                
                                     <li><a href="contact.html">CONTACT</a></li>
                                 </ul>
                                 <!-- End Nav Footer-->
@@ -1094,42 +913,42 @@
                     </div>
                 </div>
                 <!-- footer Down-->
-            </footer>      
+            </footer>
             <!-- End footer-->
         </div>
         <!-- End layout-->
 
         <!-- ======================= JQuery libs =========================== -->
-        <!-- jQuery local--> 
-        <script src="js/jquery.js"></script>  
-        <script src="js/jquery-ui.1.10.4.min.js"></script>                
+        <!-- jQuery local-->
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.1.10.4.min.js"></script>
         <!--Nav-->
-        <script src="js/nav/jquery.sticky.js" type="text/javascript"></script>    
+        <script src="js/nav/jquery.sticky.js" type="text/javascript"></script>
         <!--Totop-->
-        <script type="text/javascript" src="js/totop/jquery.ui.totop.js" ></script>  
+        <script type="text/javascript" src="js/totop/jquery.ui.totop.js" ></script>
          <!--Accorodion-->
-        <script type="text/javascript" src="js/accordion/accordion.js" ></script>  
+        <script type="text/javascript" src="js/accordion/accordion.js" ></script>
         <!--Slide Revolution-->
-        <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.tools.min.js" ></script>      
-        <script type='text/javascript' src='js/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>    
+        <script type="text/javascript" src="js/rs-plugin/js/jquery.themepunch.tools.min.js" ></script>
+        <script type='text/javascript' src='js/rs-plugin/js/jquery.themepunch.revolution.min.js'></script>
         <!-- Maps -->
-        <script src="js/maps/gmap3.js"></script>            
-        <!--Ligbox--> 
-        <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script> 
+        <script src="js/maps/gmap3.js"></script>
+        <!--Ligbox-->
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
         <!-- carousel.js-->
         <script src="js/carousel/carousel.js"></script>
         <!-- Filter -->
         <script src="js/filters/jquery.isotope.js" type="text/javascript"></script>
         <!-- Twitter Feed-->
-        <script src="js/twitter/jquery.tweet.js"></script> 
+        <script src="js/twitter/jquery.tweet.js"></script>
         <!-- flickr Feed-->
-        <script src="js/flickr/jflickrfeed.min.js"></script>    
+        <script src="js/flickr/jflickrfeed.min.js"></script>
         <!--Theme Options-->
         <script type="text/javascript" src="js/theme-options/theme-options.js"></script>
-        <script type="text/javascript" src="js/theme-options/jquery.cookies.js"></script> 
+        <script type="text/javascript" src="js/theme-options/jquery.cookies.js"></script>
         <!-- Bootstrap.js-->
-        <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script> 
-        <script type="text/javascript" src="js/bootstrap/bootstrap-slider.js"></script> 
+        <script type="text/javascript" src="js/bootstrap/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap/bootstrap-slider.js"></script>
         <!--MAIN FUNCTIONS-->
         <script type="text/javascript" src="js/main.js"></script>
         <!-- ======================= End JQuery libs =========================== -->
@@ -1146,7 +965,7 @@
                     navigationType:"none",
                     navigationArrows:"solo",
                     navigationStyle:"preview1"
-                });             
+                });
             }); //ready
         </script>
         <!--End Slider Function-->

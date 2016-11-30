@@ -1,49 +1,49 @@
 @charset "utf-8";
 
-/* ============================== 
+/* ==============================
 	- Template Name: Travelia - Travel Theme And Hotel Online Booking.
 	- Autor: Iwthemes
 	- Email: support@iwthemes.com
 	- Name File: style.css
 	- Version 1.0 - Created on 26 May 2015
-	- Website: http://www.iwthemes.com 
+	- Website: http://www.iwthemes.com
 	- Copyright: (C) 2015
-================================= */	
+================================= */
 
-/* ---------------------- 
+/* ----------------------
 	Stylesheet Table Guide
 -------------------------
 
 01. Import styles
 	-  bootstrap.css  - include resetes ( Media querys, grid-responsive,layout).
-	-  bootstrap-theme.css	
+	-  bootstrap-theme.css
 	-  bootstrap-slider.css
 	-  style.css (Principal Nav Styles)
 	-  jquery.fancybox.css (Ligbox Styles)
 	-  theme-options.css (Skins And Layouts Options)
 	-  animate.css (Animations Styles)
-	-  owl.carousel.css 
+	-  owl.carousel.css
 	-  owl.theme.css
-	-  flickr.css  	
+	-  flickr.css
 	-  font-awesome.min.css
 	-  calendar.css
 	-  revolution.css
 	-  extralayers.css
 	-  settings.css
-	-  Google Fonts  - Open sans And Raleway	 
-	
+	-  Google Fonts  - Open sans And Raleway
+
 02. Basic Elements
-	-  Standar Styles	
+	-  Standar Styles
 	-  Twitter Section
 	-  Titles
-	-  Hover efect 
+	-  Hover efect
 	-  Semibox Layout
 	-  List
 
 0.3.  HEADER
 	-  Header 1 , 2, 3, 4
 	-  Info head
-	-  Filter Title 
+	-  Filter Title
 	-  Title Header
 	-  Nav Tabs
 	-  Tabs Detailed
@@ -51,25 +51,25 @@
 	-  Calendar
 	-  Section Titles 1
 	-  Crumbs 1
-	-  Section Title 2 
+	-  Section Title 2
 	-  Crumbs 2
 	-  Section Title 3
 	-  Crumbs 3
 	-  section-title-detailed
 
-0.4.  GENERAL STRUCTURE	
+0.4.  GENERAL STRUCTURE
 	-  Content Info
-	-  Services Lines 
-	-  item-boxed 
-	-  Item Boxes 2 
+	-  Services Lines
+	-  item-boxed
+	-  Item Boxes 2
 	-  Features Items
 	-  Promotion Box
-	-  Parallax Secion 
+	-  Parallax Secion
 	-  Video Section
- 	-  Footer 	
+ 	-  Footer
  	-  Footer V-1
  	-  Footer V-2
- 	-  Footer V-3 
+ 	-  Footer V-3
  	-  Footer V-4
  	-  Newsletter
  	-  Social
@@ -77,7 +77,7 @@
  	-  Preloader
  	-  toTop
  	-  ACCORDION
-	-  Progress	
+	-  Progress
 	-  Testimonial Properties
 	-  Filters
 	-  Galley
@@ -90,7 +90,7 @@
 	-  Form Theme
 	-  Contact
 	-  Team Members
-	-  Numbers Info 
+	-  Numbers Info
 	-  Tables pricing
 	-  Form Detailed
 	-  sort-by-container
@@ -146,9 +146,9 @@ body{
 	font-weight: lighter;
 	line-height: 1.5rem;
 }
-h1, h2, h3, h4, h5, h6 {	
-	padding: 5px 0 15px 0;	
-	margin: 0;	
+h1, h2, h3, h4, h5, h6 {
+	padding: 5px 0 15px 0;
+	margin: 0;
 	color: #272727;
 	font-weight: normal;
 	font-family: 'Raleway', sans-serif;
@@ -233,7 +233,7 @@ ul.single-carousel,
 	opacity: 0.8;
 }
 .btn-primary:hover{
-	color: #fff;	
+	color: #fff;
 }
 .paddings{
 	padding: 100px 0;
@@ -378,7 +378,7 @@ iframe.video{
 	font-style: italic;
 }
 .tweet_text{
-	color: #777;	
+	color: #777;
 	font-size: 1.2rem;
 	line-height: 1.8rem;
 }
@@ -411,7 +411,7 @@ iframe.video{
 	top: -20px;
 	left: 55%;
 	font-size: 7rem;
-	z-index: 0; 
+	z-index: 0;
 }
 .opacy_bg_02 .titles i{
 	color: rgba(255,255,255, 0.2);
@@ -523,9 +523,9 @@ hr.tall{
 /* ---------------------------------------------------------------------- */
 
 /*  Header -------------------------------------------*/
-.header-v1{	
+.header-v1{
 	background-color: #232323;
-	background: rgba(0,0,0,0.6);	
+	background: rgba(0,0,0,0.6);
 	position: fixed;
 	left: 0;
 	max-height: 60px;
@@ -537,8 +537,8 @@ hr.tall{
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
 }
-.header-v2{	
-	background: #fff;	
+.header-v2{
+	background: #fff;
 	position: fixed;
 	left: 0;
 	z-index: 9999;
@@ -560,8 +560,8 @@ hr.tall{
 	border-bottom: 1px solid #dedede !important;
 	max-height: 61px;
 }
-.header-v3{	
-	background: #fff;	
+.header-v3{
+	background: #fff;
 	left: 0;
 	z-index: 9999;
 	width: 100%;
@@ -572,8 +572,8 @@ hr.tall{
     -o-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out;
 }
-.header-v4{	
-	background-color: #fff;	
+.header-v4{
+	background-color: #fff;
 	position: relative;
 	left: 0;
 	z-index: 9999;
@@ -595,8 +595,8 @@ hr.tall{
 .header-v3 .flat-mega-menu > ul > li,
 .header-v3 .flat-mega-menu > ul > li > a,
 .header-v4 .flat-mega-menu > ul > li,
-.header-v4 .flat-mega-menu > ul > li > a{	
-	color: #727272;	
+.header-v4 .flat-mega-menu > ul > li > a{
+	color: #727272;
 }
 .header-v4  .flat-mega-menu > ul{
 	text-align: center;
@@ -612,7 +612,7 @@ hr.tall{
   top: 0;
 }
 .header-v4 .flat-mega-menu > ul > .title > a {
-  text-align: center; 
+  text-align: center;
   padding-right: 0;
   padding-left: 0 !important;
 }
@@ -686,7 +686,7 @@ hr.tall{
 	margin: 0;
 	width: 100%;
 	font-size: 11px;
-	border-right: 0;	
+	border-right: 0;
 	padding: 0;
 }
 .info-head ul li ul li ul li a{
@@ -752,7 +752,7 @@ hr.tall{
 .filter-title.top-40{
 	top: 40%;
 }
-.layout-boxed .filter-title, 
+.layout-boxed .filter-title,
 .layout-boxed-margin .filter-title{
 	top: 30%;
 	left: 50%;
@@ -912,13 +912,13 @@ hr.tall{
    color: #565656;
 }
 .filter-header :-moz-placeholder { /* Firefox 18- */
-   color: #565656;  
+   color: #565656;
 }
 .filter-header ::-moz-placeholder {  /* Firefox 19+ */
-   color: #565656;  
+   color: #565656;
 }
-.filter-header :-ms-input-placeholder {  
-   color: #565656;  
+.filter-header :-ms-input-placeholder {
+   color: #565656;
 }
 span.custom-select {
 	padding-left: 15px;
@@ -1180,7 +1180,7 @@ span.custom-select {
 /* section-title-detailed --------------------------*/
 .section-title-detailed{
   max-height: 700px;
-  height: auto; 
+  height: auto;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -1466,7 +1466,7 @@ p.lead .line{
 .info-boxed h3 span{
 	font-size: 0.775rem;
 	display: block;
-	margin-top:8px; 
+	margin-top:8px;
 	font-weight: bold;
 	font-style: italic;
 }
@@ -1921,7 +1921,7 @@ hr.separator:before {
 }
 #footer h3{
 	font-size: 18px;
-	padding-bottom: 20px;	
+	padding-bottom: 20px;
 }
 #footer ul{
 	margin: 0;
@@ -1935,7 +1935,7 @@ hr.separator:before {
 	padding-right: 5px;
 }
 #footer .input-prepend{
-	width: 100%;	
+	width: 100%;
 }
 #footer .input-prepend input{
 	height: 30px;
@@ -1948,7 +1948,7 @@ hr.separator:before {
 	background: #ddd;
 	height: 30px;
 }
-#footer .input-prepend .add-on i{	
+#footer .input-prepend .add-on i{
 	vertical-align: middle;
 }
 #footer .button{
@@ -1964,7 +1964,7 @@ hr.separator:before {
 	line-height: 3.125rem;
 	padding-top: 0;
 }
-#footer .title-footer h2 span{	
+#footer .title-footer h2 span{
 	font-style: italic;
 }
 #footer .divisor{
@@ -1980,7 +1980,7 @@ hr.separator:before {
 .footer-v1 h3,
 .footer-v1 ul li a:hover,
 .footer-v1 .title-footer h2{
-	color: #fff;	
+	color: #fff;
 }
 .footer-v1 ul li a,
 .footer-v1 p{
@@ -2011,7 +2011,7 @@ hr.separator:before {
 .footer-v2 .title-footer h2,
 .footer-v2 .footer-down p,
 .footer-v2 .nav-footer li:before{
-	color: #999;	
+	color: #999;
 }
 .footer-v2 ul li a,
 .footer-v2 p,
@@ -2045,7 +2045,7 @@ hr.separator:before {
 .footer-v3 .title-footer h2,
 .footer-v3 .footer-down p,
 .footer-v3 .nav-footer li:before{
-	color: #666;	
+	color: #666;
 }
 .footer-v3 ul li a,
 .footer-v3 p,
@@ -2088,7 +2088,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .footer-v4 .footer-down p,
 .footer-v4 .nav-footer li:before,
 .footer-v4 .footer-down ul li a{
-	color: #777;	
+	color: #777;
 }
 .footer-v4 ul li a,
 .footer-v4 p{
@@ -2114,23 +2114,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 /* Newsletter -------------------------------------------*/
-#newsletterForm .form-control,
-#newsletterForm .input-group-btn .btn-primary,
-#newsletterForm .input-group-addon{
+.newsletterForm .form-control,
+.newsletterForm .input-group-btn .btn-primary,
+.newsletterForm .input-group-addon{
 	height: 45px;
 	border:solid 1px #dedede;
 }
-#newsletterForm .form-control{
+.newsletterForm .form-control{
 	border-left: 0;
 }
-#newsletterForm .input-group-addon i{
+.newsletterForm .input-group-addon i{
 	color: #999;
 }
-#newsletterForm .btn{
+.newsletterForm .btn{
 	border-radius: 3px;
 	width: 100%;
 }
-#result-newsletter .alert{
+.result-newsletter .alert{
 	margin: 0;
 	margin-top: 20px;
 	padding: 10px 5px;
@@ -2154,7 +2154,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .social li span{
 	background: #555;
 	padding: 5px 10px;
-	margin-right: 15px;	
+	margin-right: 15px;
 	-webkit-transition: 0.2s all ease;
 	-moz-transition: 0.2s all ease;
 	-o-transition: 0.2s all ease;
@@ -2284,7 +2284,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	overflow:hidden;
 	float:left;
 	opacity: 0;
-	-moz-opacity: 0;	
+	-moz-opacity: 0;
 }
 #toTop:active, #toTop:focus {
 	outline:none;
@@ -2293,13 +2293,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /*	ACCORDION ---------------------------------------------------------*/
 .acc-trigger { cursor: pointer;  margin: 0 0 0 0; width: 100%;	}
 .no-js .acc-trigger:last-of-type { border-bottom: none; }
-.acc-trigger a { 
-	background: #f9f9f9 url("../img/img-theme/accordion-ico.png") no-repeat 14px 13px; 
-	display: block; 
-	padding: 11px 20px 11px 44px; 
-	text-decoration: none; 
-	border: solid 1px #dedede; 
-	font-size: 0.875rem; 
+.acc-trigger a {
+	background: #f9f9f9 url("../img/img-theme/accordion-ico.png") no-repeat 14px 13px;
+	display: block;
+	padding: 11px 20px 11px 44px;
+	text-decoration: none;
+	border: solid 1px #dedede;
+	font-size: 0.875rem;
 	color: #232323;
 	margin-bottom: 5px;
 }
@@ -2308,9 +2308,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .acc-trigger.active { cursor: default; background:#fff;}
 .acc-trigger.active:last-of-type { border-bottom: none; margin-bottom: 0; }
 .acc-trigger.active a { background-position: 14px -58px; cursor: default;	}
-.acc-container .content {  
-	padding: 15px 0; 
-	color: #999;  
+.acc-container .content {
+	padding: 15px 0;
+	color: #999;
 }
 .acc-container{
 	width: 100% !important;
@@ -2324,7 +2324,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   from {
     background-position: 0 0;
   }
-  
+
   to {
    background-position: 44px 0;
   }
@@ -2422,17 +2422,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	bottom: -20px;
 	right: 0;
 }
-.image-testimonials{	
-	width: 120px;	
+.image-testimonials{
+	width: 120px;
 	margin: 0 auto;
 	height: 120px;
 	border-radius: 50%;
-	position: relative;	
+	position: relative;
 	overflow: hidden;
 	z-index: 2;
 }
-.image-testimonials img{	
-	width: 120px;	
+.image-testimonials img{
+	width: 120px;
 	height: 120px;
 	margin-top: -3px;
 	margin-left: -3px;
@@ -2650,35 +2650,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 /* Sitemap ---------------------------------------------------------------*/
-.sitemap{ 
-	float:left; 
-	display:inline; 
-	width:370px; 
-	margin-right:2px; 
-	font-size: 0.875rem;  
+.sitemap{
+	float:left;
+	display:inline;
+	width:370px;
+	margin-right:2px;
+	font-size: 0.875rem;
 	padding:10px 0 0 0;
 	background:url("../img/img-theme/line_tree1.gif") left repeat-y;
 }
-.sitemap li{ 
-	float:left; 
-	width:347px; 
-	padding-left:25px; 
+.sitemap li{
+	float:left;
+	width:347px;
+	padding-left:25px;
 	line-height: 35px;
 	background:url("../img/img-theme/line_tree2.gif") 0 center no-repeat;
 }
-.sitemap li.has_sub{ 
+.sitemap li.has_sub{
 	background:url("../img/img-theme/line_tree2.gif") 0 17px no-repeat;
 }
-.sitemap li a{ 
-	color:#666; 
-	position:relative; 
+.sitemap li a{
+	color:#666;
+	position:relative;
 	text-decoration:none;
 }
 .sitemap li a:hover{
 	text-decoration:underline;
 }
-.sitemap ul{ 
-	width:132px;  
+.sitemap ul{
+	width:132px;
 	padding-top:0;
 }
 
@@ -2896,7 +2896,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   width: 40px;
   height: 40px;
   -webkit-transition: all .3s ease-in-out;
-  transition: all .3s 
+  transition: all .3s
 }
 .post-footer .post-social li a i:last-child {
   color: #666;
@@ -3108,7 +3108,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   border-bottom: solid 1px #dedede;
 }
 address{
-	line-height: 35px;	
+	line-height: 35px;
 	padding-left: 10px;
 }
 address i{
@@ -3162,7 +3162,7 @@ address strong{
 	display: block;
 	color: #232323;
 	font-size: 0.9rem;
-	padding-top:5px; 
+	padding-top:5px;
 }
 .item-team-01 .info-team p{
 	color: #fff;
@@ -3213,7 +3213,7 @@ address strong{
 
 /* Tables pricing -----------------------------------------------*/
 .item-table{
-	border: solid 1px #dedede;		
+	border: solid 1px #dedede;
 	text-align: center;
 }
 .no-padding .item-table{
@@ -3271,7 +3271,7 @@ address strong{
 }
 .item-table ul{
 	background-color: #fcfcfc;
-	margin-bottom: 25px;	
+	margin-bottom: 25px;
 	text-align: left;
 	list-style: none;
 	padding: 0;
@@ -3330,16 +3330,16 @@ address strong{
 	color: #fff;
 }
 .color-red{
-	background: #E1483F !important; 
-	background-color: #E1483F !important; 
+	background: #E1483F !important;
+	background-color: #E1483F !important;
 }
 .color-blue{
-	background: #0088cc; 
-	background-color: #0088cc; 
+	background: #0088cc;
+	background-color: #0088cc;
 }
 .color-green{
-	background: #88C425; 
-	background-color: #88C425; 
+	background: #88C425;
+	background-color: #88C425;
 }
 .color-orange{
 	background: #FB9134;
@@ -3449,7 +3449,7 @@ address strong{
 	color: #fff;
 	padding: 17px 15px 0 15px;
 	float: left;
-	font-weight: lighter;	
+	font-weight: lighter;
 }
 .sort-by-container ul li a{
 	color: #fff;
