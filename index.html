@@ -14,6 +14,7 @@
         <link href="css/style.css" rel="stylesheet" media="screen">
         <!-- Responsive CSS -->
         <link href="css/theme-responsive.css" rel="stylesheet" media="screen">
+        <link href="css/dante_landing.css" rel="stylesheet" media="screen">
         <!-- Skins Theme -->
         <link href="#" rel="stylesheet" media="screen" class="skin">
 
@@ -36,33 +37,6 @@
         <![endif]-->
     </head>
 
-    <style>
-      .item-boxed.image-boxed
-        {
-        height: 255px;
-        }
-      .item-boxed.image-boxed a,.image-boxed i
-        {
-        display: none
-        }
-      .price,.starts,.content-btn
-        {
-        display: none;
-        }
-      .overlay
-        {
-        display: none;
-        }
-      .services-lines-info a
-        {
-        display: none;
-        }
-      #testimonials_box
-      {
-        display: none;
-      }
-    </style>
-
 
     <body>
         <!--Preloader-->
@@ -84,71 +58,28 @@
                     <ul class="collapse"><!-- collapse class for collapse the drop down -->
                         <!-- website title - Logo class -->
                         <li class="title">
-                          <img src="img/logoDante.png" style="height: 57px;position: relative; float: left;">
+                          <img src="img/logoDante.png" class="logo black">
+                          <img src="img/logoDante_white.png" class="logo white">
                           <a href="index.html" style="width: 0%"><span>Dante's</span>Embassy<span>.</span></a>
                         </li>
                         <!-- End website title - Logo class -->
 
                         <li><a href="index.html">HOME</a></li>
 
-                      <!--
-                      <li><a href="template-about-2.html">ABOUT US</a></li>
+                        <!--
+                        <li><a href="template-about-2.html">ABOUT US</a></li>
+                        <li><a href="template-blog-right.html">BLOG</a></li>
+                        <li><a href="template-gallery-2.html">GALLERY</a></li>
+                        -->
 
-                      <li><a href="template-blog-right.html">BLOG</a></li>
-
-                      <li><a href="template-gallery-2.html">GALLERY</a></li>
-                      -->
-
-                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="#form_contacts">CONTACT</a></li>
 
                         <li class="social-bar"> <a href="#">FOLLOW US</a>
                             <ul class="drop-down hover-zoom">
-                                <li> <a href="#" target="_blank"><i class="fa fa-flickr"></i> </a> </li>
-                                <li> <a href="#" target="_blank"><i class="fa fa-instagram"></i> </a> </li>
-                                <li> <a href="#" target="_blank"><i class="fa fa-youtube"></i> </a> </li>
+                                <li> <a href="#" target="_blank"><i class="fa fa-twitter"></i> </a> </li>
                                 <li> <a href="#" target="_blank"><i class="fa fa-facebook"></i> </a> </li>
-                                <li> <a href="#" target="_blank"><i class="fa fa-google-plus"></i> </a> </li>
                                 <li> <a href="#" target="_blank"><i class="fa fa-pinterest"></i> </a> </li>
-                            </ul>
-                        </li>
-
-                        <li class="login-form"> <i class="fa fa-user"></i><!-- login form -->
-                            <ul class="drop-down hover-expand">
-                                <li>
-                                    <form method="post" action="#">
-                                        <table>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <input type="email" required="required" name="email" placeholder="Your email address">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td colspan="2">
-                                                    <input type="password" required="required" name="password" placeholder="Password">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td> <input type="submit" value="Login"> </td>
-                                                <td> <label> <input type="checkbox" name="check_box"> Keep me signed in </label> </td>
-                                            </tr>
-                                        </table>
-                                    </form>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="search-bar"> <i class="fa fa-search"></i><!-- search bar -->
-                            <ul class="drop-down hover-expand">
-                                <li>
-                                    <form method="post" action="#">
-                                        <table>
-                                            <tr>
-                                                <td> <input type="search" required="required" name="serach_bar" placeholder="Type Keyword Here"> </td>
-                                                <td> <input type="submit" value="Search"> </td>
-                                            </tr>
-                                        </table>
-                                    </form>
-                                </li>
+                                <li> <a href="#" target="_blank"><i class="fa fa-instagram"></i> </a> </li>
                             </ul>
                         </li>
                     </ul>
@@ -166,7 +97,7 @@
                         <!-- SLIDE  -->
                         <li data-transition="slidevertical" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
                             <!-- MAIN IMAGE -->
-                            <img src="img/slide/1.jpg"  alt="fullslide1" data-bgposition="center center" data-kenburns="on" data-duration="6000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="right center">
+                            <img src="img/slide/1.jpg"  alt="fullslide1" data-bgposition="center center" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-bgfit="130" data-bgfitend="100" data-bgpositionend="center center">
                             <!-- LAYERS -->
                         </li>
 
@@ -236,8 +167,9 @@
                 <div class="filter-title">
                     <!-- TITLE HEADER-->
                     <div class="title-header">
-                        <h1>BOOK A WHOLE HOME</h1>
-                        <p class="lead">Book cheap hotels and make payment facilities, free cancellation when the hotel so provides, compare prices and find all the options for your vacation.</p>
+                        <h1>Our Italy <i class="fa fa-heart"></i> YOUR Italy</h1>
+                        <p class="lead" style="display: none">Organizziamo il viaggio dei tuoi sogni, perchè ognuno desidera qualcosa di diverso. Cerca le tue passioni e vivile adesso! Noi possiamo solo... prometterti grandi emozioni!</p>
+                        <p class="lead">We organize the trip of your dreams, because everybody wants something different. Search your passions and live it now! <br>We can only promise you ... great emotions!</p>
                     </div>
                     <!-- END TITLE HEADER-->
                   <div class="row">
@@ -246,26 +178,18 @@
                     <div class="col-md-8">
                       <form class="newsletterForm" action="php/mailchip/newsletter-subscribe.php">
                         <div class="row">
-                          <div class="col-md-5">
+                          <div class="col-md-4 col-md-offset-3">
                             <div class="input-group">
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-envelope"></i>
-                                                    </span>
-                              <input class="form-control" placeholder="Your Name" name="name" type="text" required="required">
-                            </div>
-                          </div>
-                          <div class="col-md-5">
-                            <div class="input-group">
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-envelope"></i>
-                                                    </span>
-                              <input class="form-control" placeholder="Your  Email" name="email" type="email" required="required">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                                <input class="form-control" placeholder="Your  Email" name="email" type="email" required="required">
                             </div>
                           </div>
                           <div class="col-md-2">
-                                                <span class="input-group-btn">
-                                                    <button class="btn btn-primary" type="submit" name="subscribe">SIGN UP</button>
-                                                </span>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit" name="subscribe">SIGN UP</button>
+                                </span>
                           </div>
                         </div>
                       </form>
@@ -368,52 +292,6 @@
                                           <h5>Travel Business </h5>
                                         </div>
                                       </li>
-
-                                      <!--
-                                      <li>
-                                            <div class="item-service-line">
-
-                                                <h5>Special Activities</h5>
-                                            </div>
-                                        </li>
-                                         <li>
-                                            <div class="item-service-line">
-                                                <i class="fa-user-secret"></i>
-                                                <h5>Travel Arrangements</h5>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="item-service-line">
-                                                <i class="fa fa-search-plus"></i>
-                                                <h5>Location Manager</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item-service-line">
-                                                <i class="fa fa-map-marker"></i>
-                                                <h5>Handpicked Hotels</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item-service-line">
-                                                <i class="fa fa-money"></i>
-                                                <h5>Best Price Guarantee</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item-service-line">
-                                                <i class="fa fa-bank"></i>
-                                                <h5>Trust & Safety</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="item-service-line">
-                                                <i class="fa fa-line-chart"></i>
-                                                <h5>Best Travel Agent</h5>
-                                            </div>
-                                        </li>
-                                        -->
                                     </ul>
                                 </div>
                                 <!-- End Services Items -->
@@ -563,7 +441,7 @@
                         <div class="row">
                             <div class="titles">
                                 <h2><span>Dante's Embassy</span> you want to know</h2>
-                              <div>
+                              <div id="quiz">
                                   <a id="btnTest" href="https://docs.google.com/a/ekaros.it/forms/d/e/1FAIpQLSdh7LCzu8tVD-Q06hLkAdB1-ZVtmGUlU7tcvCXXubHlUqYJ0A/viewform" class="btn btn-primary">
                                   <i class="fa fa-gift"></i>Quiz
                                   </a>
@@ -575,23 +453,25 @@
                     <!-- End Title-->
 
                     <!-- content-->
-                    <div class="container">
+                    <div class="container" id="box_plus">
                         <div class="row padding-bottom">
                             <div class="col-md-4">
                                 <div class="item-feature text-center">
                                     <div class="head-feature">
-                                        <span>Up</span>
+                                        <span>safety</span>
                                         <br>
                                         <div class="title-feature">
                                             <i class="fa fa-sun-o left-icon"></i>
                                             <i class="fa fa-umbrella right-icon"></i>
-                                            30
-                                        </div><span>%</span>
+                                          efficiency
+                                        </div><span></span>
                                         <br>
-                                        <span>discount</span>
+                                        <span>programming</span>
                                     </div>
                                     <div class="info-feature">
-                                        <p>For over 4 years offering the best plans at the best price with exclusive discounts.</p>
+                                        <p>We organize everything for you and will never leave you alone. Serene in any situation.</p>
+                                        <p style="display: none">Organiziamo tutto per te e non ti lasciamo mai solo. Sereni in ogni situazione.</p>
+
                                     </div>
                                 </div>
                             </div>
@@ -599,18 +479,20 @@
                             <div class="col-md-4 text-center">
                                 <div class="item-feature text-center">
                                     <div class="head-feature">
-                                        <span>over</span>
+                                        <span>adventure</span>
                                         <br>
                                         <div class="title-feature">
                                             <i class="fa fa-thumbs-o-up left-icon"></i>
                                             <i class="fa fa-heart right-icon"></i>
-                                            1 million
+                                          emotions
                                         </div>
                                         <br>
-                                        <span>Reviews</span>
+                                        <span>passion</span>
                                     </div>
                                     <div class="info-feature">
-                                        <p>Browse and compare the views of users and safe acertarás.</p>
+                                        <p>We want you to live an emotion not only want you to do a trip. We have the passion to try and follow your passions.</p>
+                                        <p style="display: none">Vogliamo che tu viva un'emozione non solo che tu faccia un viaggio.
+                                          Abbiamo la passione per cercare e le tue passioni.</p>
                                     </div>
                                 </div>
                             </div>
@@ -622,13 +504,14 @@
                                         <br>
                                         <div class="title-feature">
                                             <i class="fa fa-check right-icon"></i>
-                                            the price
+                                          price safe
                                         </div>
                                         <br>
                                         <span>+ low</span>
                                     </div>
                                     <div class="info-feature">
-                                        <p>All days Escape at the best price in offers for our products.</p>
+                                        <p style="display: none">Vogliamo rassicurarti sul tuo badget. Prezzi certi e gestione delle variabili.</p>
+                                        <p>We want to reassure you on your badget. certain and management of variables prices</p>
                                     </div>
                                 </div>
                             </div>
@@ -647,7 +530,7 @@
                 <!-- End Promotion Boxes - Parallax Section -->
 
                 <!-- End content - Slide Features-->
-                <div class="content_info content_resalt">
+                <div class="content_info content_resalt" style="display:none;">
                     <ul id="slide-features">
                         <li>
                             <!-- content-->
@@ -780,22 +663,85 @@
                 <!-- End content info - testimonials-->
 
                 <!-- Twitter Section -->
-                <div class="section-twitter">
+                <div class="section-twitter" id="box_section-twitter">
                     <i class="fa fa-twitter icon-big"></i>
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="text-center">
-                                    <h2>Our recents <span class="text-resalt">twitts</span>.</h2>
+                                <div class="text-center titles">
+                                    <h2><span>Do you love Italy?</span>
+                                      <br>Come and experience it with us!</h2>
                                 </div>
-                                <div id="twitter"></div>
+                                <div class="twitter"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- End Twitter Section -->
+                <!--
+    ==================
+    CONTACT
+    ==================
+    -->
+                <div id="form_contacts" class="content_info">
+
+                  <div class="titles">
+                    <h2>The <span>Contacts</span> </h2>
+                    <i class="fa fa-mail"></i>
+                    <hr class="tall">
+                  </div>
+
+                    <div class="container">
+                      <div class="row">
+                        <!-- Sidebars -->
+                        <div class="col-md-4">
+                            <h3>FOLLOW US</h3>
+                            <ul class="social">
+                              <!--
+                              <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="#"></a></li>
+                              <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="#"></a></li>
+                              <li class="pinterest"><span><i class="fa fa-pinterest"></i></span><a href="#"></a></li>
+                              <li class=""><span><i class="fa fa-instagram fa-3x"></i></span><a href="#"></a></li>
+-->
+                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-facebook fa-2x"></i> </a> </li>
+                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-twitter fa-2x"></i> </a> </li>
+                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-pinterest fa-2x"></i> </a> </li>
+                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-instagram fa-2x"></i> </a> </li>
+
+                            </ul>
+                          <hr class="tall">
+                          <aside>
+                            <h4>Recent instagram</h4>
+                            <ul id="flickr" class="thumbs"></ul>
+                          </aside>
+                        </div>
+                        <!-- End Sidebars -->
+
+                        <div class="col-md-8">
+                          <p class="lead"></p>
+                          <form id="form-contact" class="form-theme" action="php/send-mail.php">
+                            <input type="text" placeholder="Name" name="Name" required="">
+                            <input type="email" placeholder="Email" name="Email" required="">
+                            <input type="number" placeholder="Phone" name="Phone" required="">
+                            <textarea placeholder="Your Message" name="message" required=""></textarea>
+                            <input type="submit" name="Submit" value="Send Message" class="btn btn-primary">
+                          </form>
+                          <div id="result"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                <!--
+                ==================
+                end CONTACT
+                ==================
+                -->
+
             </section>
             <!-- End Content Central -->
+
 
             <!-- footer-->
             <footer id="footer" class="footer-v1">
@@ -804,58 +750,14 @@
                         <!-- Title Footer-->
                         <div class="col-md-5">
                             <div class="title-footer">
-                                <h2>Save on your plans!
-                                <br> <span>Select Dante's Embassy Theme And Receive</span>
-                                <br> our discounts by e-mail.</h2>
+                                <h2><span>Select Dante's Embassy Theme And Receive</span>
+                                <br> our news and discounts by e-mail.</h2>
                             </div>
-
-                            <p>You can choose your favorite destination and start planning your long-awaited vacation. We offer thousands of destinations and have a wide variety of hotels so that you can host and enjoy your stay without problems. Book now your trip Dante's Embassy.com.</p>
                         </div>
                         <!-- End Title Footer-->
 
                         <div class="col-md-7">
-                            <div class="row">
-                                <!-- Social Us-->
-                                <div class="col-md-3">
-                                    <h3>FOLLOW US</h3>
-                                    <ul class="social">
-                                        <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="#">Facebook</a></li>
-                                        <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="#">Twitter</a></li>
-                                        <li class="github"><span><i class="fa fa-github"></i></span><a href="#">Github</a></li>
-                                    </ul>
-                                </div>
-                                <!-- End Social Us-->
 
-                                <!-- Recent links-->
-                                <div class="col-md-5">
-                                    <h3>TRAVEL SPECIALISTS </h3>
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> <a href="#">Golf Vacations</a></li>
-                                        <li><i class="fa fa-check"></i> <a href="#">Disney Parks Vacations</a></li>
-                                        <li><i class="fa fa-check"></i> <a href="#">Vacations As Advertised</a></li>
-                                    </ul>
-                                </div>
-                                <!-- End Recent links-->
-
-                                <!-- Contact Us-->
-                                <div class="col-md-4">
-                                   <h3>CONTACT US</h3>
-                                   <ul class="contact_footer">
-                                        <li>
-                                            <i class="fa fa-envelope"></i> <a href="#">example@example.com</a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-headphones"></i> <a href="#">55-5698-4589</a>
-                                         </li>
-                                        <li class="location">
-                                            <i class="fa fa-home"></i> <a href="#"> Av new stret - New York</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- Contact Us-->
-                            </div>
-
-                            <div class="divisor"></div>
 
                             <div class="row">
                                 <!-- Newsletter-->
@@ -890,6 +792,22 @@
                                 </div>
                                 <!-- end Newsletter-->
                             </div>
+                          <div class="row">
+                            <!-- Social Us-->
+                            <div class="col-md-12">
+                              <h3>FOLLOW US</h3>
+                              <ul class="social">
+                                <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="#">Facebook</a></li>
+                                <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="#">Twitter</a></li>
+                                <li class="pinterest"><span><i class="fa fa-pinterest"></i></span><a href="#">Pinterest</a></li>
+                                <li class="instagram"><span><i class="fa fa-instagram"></i></span><a href="#">Instagram</a></li>
+                              </ul>
+                            </div>
+                            <!-- End Social Us-->
+                          </div>
+
+                          <div class="divisor"></div>
+
                         </div>
                     </div>
                 </div>
@@ -905,7 +823,7 @@
                                 <!-- Nav Footer-->
                                 <ul class="nav-footer">
                                     <li><a href="index.html">HOME</a> </li>
-                                    <li><a href="contact.html">CONTACT</a></li>
+                                    <li><a href="#form_contacts">CONTACT</a></li>
                                 </ul>
                                 <!-- End Nav Footer-->
                             </div>
@@ -959,6 +877,7 @@
                 jQuery('.tp-banner').show().revolution({
                     dottedOverlay:"none",
                     delay:5000,
+                    onHoverStop:"off",
                     startwidth:1170,
                     startheight:925,
                     minHeight:500,

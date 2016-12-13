@@ -1,0 +1,67 @@
+.item-boxed.image-boxed
+  {
+  height: 255px;
+  }
+.item-boxed.image-boxed a,.image-boxed i
+  {
+  display: none
+  }
+.price,.starts,.content-btn
+  {
+  display: none;
+  }
+.overlay
+  {
+  display: none;
+  }
+.services-lines-info a
+  {
+  display: none;
+  }
+#testimonials_box
+  {
+  display: none;
+  }
+.social li
+  {
+  display: inline-block;
+  }
+#footer ul li
+  {
+  margin-right: 30px;
+  }
+#box_section-twitter
+  {
+  background: rgba(66,169,211,.3);
+  }
+#box_section-twitter .text-center.titles
+  {
+  margin: 0px;
+  }
+.logo
+  {
+  height: 57px;
+  position: relative;
+  float: left;
+  }
+.sticky-wrapper .black
+  {display: none;}
+.sticky-wrapper .white
+  {display: block;}
+
+.is-sticky .black
+  {display: block;}
+.is-sticky .white
+  {display: none;}
+
+#quiz
+  {display: none}
+#form_contacts .social a i
+{
+  color: rgba(66,169,211,1);
+  padding-right:5px ;
+}
+#form_contacts .social
+{
+  padding:0px;
+}
