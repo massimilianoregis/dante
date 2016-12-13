@@ -6,13 +6,18 @@
 // Author: Iwthemes.
 // Name File: main.js
 // Version 1.0 - Created on 26 May 2015
-// Website: http://www.iwthemes.com 
+// Website: http://www.iwthemes.com
 // Email: support@iwthemes.com
 // Copyright: (C) 2015
 
 $(document).ready(function($) {
 
 	'use strict';
+
+  $('#myslideshow1').smoothSlides({navigation:false});
+
+
+
 
 	//=================================== Twitter Feed  ===============================//
   $("#twitter").tweet({
@@ -44,10 +49,10 @@ $(document).ready(function($) {
       jQuery(".preloader").delay(1000).fadeOut("slow");
   })
 
-	//=================================== Carousel Services  ==============================//	 
+	//=================================== Carousel Services  ==============================//
 	$("#single-carousel, #single-carousel-sidebar").owlCarousel({
 		  items : 1,
-		  autoPlay: 4000,  
+		  autoPlay: 4000,
     	navigation : true,
     	autoHeight : true,
     	slideSpeed : 400,
@@ -68,7 +73,7 @@ $(document).ready(function($) {
 
   //=================================== Carousel Boxes  ==================================//
    $("#boxes-carousel").owlCarousel({
-       autoPlay: 3200,      
+       autoPlay: 3200,
        items : 4,
        navigation: true,
        itemsDesktopSmall : [1024,3],
@@ -79,7 +84,7 @@ $(document).ready(function($) {
 
   //=================================== Carousel teams  ==================================//
    $("#team-carousel").owlCarousel({
-       autoPlay: 3200,      
+       autoPlay: 3200,
        items : 3,
        navigation: true,
        itemsDesktopSmall : [1024,3],
@@ -89,7 +94,7 @@ $(document).ready(function($) {
    });
 
    $("#team-carousel-02, #carousel-boxes-2").owlCarousel({
-       autoPlay: 3200,      
+       autoPlay: 3200,
        items : 2,
        navigation: false,
        itemsDesktopSmall : [1024,3],
@@ -100,7 +105,7 @@ $(document).ready(function($) {
 
    //=================================== Carousel Sponsor  ==================================//
    $("#sponsors").owlCarousel({
-       autoPlay: 3200,      
+       autoPlay: 3200,
        items : 5,
        navigation: false,
        itemsDesktop : [1199,4],
@@ -110,10 +115,10 @@ $(document).ready(function($) {
        pagination: true
    });
 
-   //=================================== Carousel testimonials  ===============================//  
+   //=================================== Carousel testimonials  ===============================//
   $("#testimonials").owlCarousel({
       items : 1,
-      autoPlay: 3200,  
+      autoPlay: 3200,
       navigation : false,
       autoHeight : true,
       slideSpeed : 400,
@@ -121,10 +126,10 @@ $(document).ready(function($) {
       pagination : true
   });
 
-	//=================================== Carousel Twitter  ===============================//	 
+	//=================================== Carousel Twitter  ===============================//
 	$(".tweet_list").owlCarousel({
 		  items : 1,
-		  autoPlay: 3200,  
+		  autoPlay: 3200,
     	navigation : false,
     	autoHeight : true,
     	slideSpeed : 400,
@@ -133,26 +138,26 @@ $(document).ready(function($) {
 	});
 
 	//=================================== Subtmit Form  ===================================//
-	$('#form-contact').submit(function(event) {  
-	     event.preventDefault();  
-	     var url = $(this).attr('action');  
-	     var datos = $(this).serialize();  
-	     	$.get(url, datos, function(resultado) {  
-	     	$('#result').html(resultado);  
-		});  
+	$('#form-contact').submit(function(event) {
+	     event.preventDefault();
+	     var url = $(this).attr('action');
+	     var datos = $(this).serialize();
+	     	$.get(url, datos, function(resultado) {
+	     	$('#result').html(resultado);
+		});
  	});
 
   //=================================== Form Newslleter  =================================//
-  $('#newsletterForm').submit(function(event) {  
-       event.preventDefault();  
-       var url = $(this).attr('action');  
-       var datos = $(this).serialize();  
-        $.get(url, datos, function(resultado) {  
-        $('#result-newsletter').html(resultado);  
-    });  
-  });  
+  $('#newsletterForm').submit(function(event) {
+       event.preventDefault();
+       var url = $(this).attr('action');
+       var datos = $(this).serialize();
+        $.get(url, datos, function(resultado) {
+        $('#result-newsletter').html(resultado);
+    });
+  });
 
-  //=================================== Ligbox  ===========================================//	
+  //=================================== Ligbox  ===========================================//
   $(".fancybox").fancybox({
       openEffect  : 'elastic',
       closeEffect : 'elastic',
@@ -177,7 +182,7 @@ $(document).ready(function($) {
   $().UItoTop({
 		scrollSpeed:500,
 		easingType:'linear'
-	});	
+	});
 
   //=================================== Portfolio Filters  ==============================//
   $(window).load(function(){
@@ -203,6 +208,6 @@ $(document).ready(function($) {
             }
         });
        return false;
-      }); 
+      });
    });
-});	
+});

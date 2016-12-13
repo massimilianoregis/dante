@@ -65,3 +65,22 @@
 {
   padding:0px;
 }
+
+
+.tp-banner UL{
+  padding:0;
+}
+.tp-banner{
+  min-height: 500px;
+  max-height: 925px;
+}
+.tp-banner img{
+  min-height: 500px;
+}
+
+.tp-banner LI{
+  overflow:hidden;
+}
+.tp-banner LI img{
+  transition-duration:4s;
+}
