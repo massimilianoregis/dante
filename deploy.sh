@@ -14,25 +14,39 @@ else
 fi
 echo $lastCommit
 
-filesChanged=$(git diff-tree --no-commit-id --name-only -r $lastCommit)
+#filesChanged=$(git diff-tree --no-commit-id --name-only -r $lastCommit)
+baseDir = "dates"
+if [ "$TRAVIS_BRANCH" == "master" ] 
+then
+	baseDir="dantes"
+fi
+
+if [ "$TRAVIS_BRANCH" == "develop" ] 
+then
+	baseDir="dantesTest"
+fi
+
+initCommit=""
+initCommit=$(curl --ftp-create-dirs -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/$baseDir/lastCommit)
+echo $lastCommit > "lastCommit"
+curl --ftp-create-dirs -T lastCommit -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/$baseDir/lastCommit
+
+echo "from "$initCommit
+echo "to   "$lastCommit
+
+
+filesChanged=$(git diff-tree --name-only -r $initCommit $lastCommit)
 if [ ${#filesChanged[@]} -eq 0 ]; then
     echo "No files to update"
 else
     for f in $filesChanged
 	do
+		echo "...."$f
 		#do not upload these files that aren't necessary to the site
 		if [ "$f" != ".travis.yml" ] && [ "$f" != "deploy.sh" ] && [ "$f" != "test.js" ] && [ "$f" != "package.json" ]
 		then
-	 		echo "Uploading $f"
-	 		if [ "$TRAVIS_BRANCH" == "master" ] 
-	 		then
-		 		curl --ftp-create-dirs -T $f -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/dantes/$f
-		 	fi
-
-		 	if [ "$TRAVIS_BRANCH" == "develop" ] 
-		 	then
-		 		curl --ftp-create-dirs -T $f -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/dantesTest/$f
-		 	fi
+	 		echo "Uploading $f"	 		
+		 	curl --ftp-create-dirs -T $f -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/$baseDir/$f		 	
 		fi
 	done
 fi
