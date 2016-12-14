@@ -10,6 +10,31 @@
 // Email: support@iwthemes.com
 // Copyright: (C) 2015
 
+function result(data){  
+  $('#thanks').modal('show');
+  $('form.signin').hide();
+  setTimeout(function(){$('#thanks').modal('hide');},4000);
+}
+function sendData(form){
+  var form =$(form).parents("form")
+  var name = form.find("input[name=name]").val();
+  var mail = form.find("input[name=mail]").val();
+  var question = form.find("input[name=question]").val();
+  var mobile = form.find("input[name=mobile]").val();
+  $.ajax({
+    dataType:'jsonp',
+    url:'https://script.google.com/macros/s/AKfycbzmwo5IYPyZjOcy3SAazmfwv0uxPYS-m5yMrCaMIA7GWpAuSxk3/exec',
+    data:{
+      name:name,
+      mail:mail,
+      question:question,
+      mobile:mobile
+    },
+    jsonpCallback: "result"
+  })
+  return false;
+}
+
 $(document).ready(function($) {
 
 	'use strict';
@@ -20,21 +45,31 @@ $(document).ready(function($) {
 
 
 	//=================================== Twitter Feed  ===============================//
+  /*
   $("#twitter").tweet({
       modpath: 'js/twitter/index.php',
       username: "envato", // Change for Your Username
       count: 5,
       loading_text: "Loading tweets..."
   });
-
+*/
   //=================================== Flikr Feed  ========================================//
-  $('#flickr').jflickrfeed({
+  /*$('#flickr').jflickrfeed({
     limit: 8, //Number of images to be displayed
     qstrings: {
       id: '36587311@N08'//Change this to any Flickr Set ID as you prefer in http://idgettr.com/
     },
     itemTemplate: '<li><a href="{{image_b}}" class="fancybox"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
-  });
+  });*/
+
+  //=================================== Instagram Feed  ========================================//
+   var feed = new Instafeed({
+        get: 'user',
+        userId: '4262357198',
+        accessToken: '4262357198.87b7c1a.77c0ebc72d0c4da08496566e7815b221',
+        template:'<li><a href="{{link}}" class="fancybox"><img src="{{image}}" alt="{{caption}}" /></a></li>'
+    });
+    feed.run();
 
   //=================================== Sticky nav ===================================//
 

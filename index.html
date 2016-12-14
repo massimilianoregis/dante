@@ -41,7 +41,7 @@
     <body>
         <!--Preloader-->
         <div class="preloader">
-            <div class="status">&nbsp;</div>
+            <div class="status pulse animated infinite">&nbsp;</div>
         </div>
         <!--End Preloader-->
 
@@ -76,10 +76,10 @@
 
                         <li class="social-bar"> <a href="#">FOLLOW US</a>
                             <ul class="drop-down hover-zoom">
-                                <li> <a href="#" target="_blank"><i class="fa fa-twitter"></i> </a> </li>
-                                <li> <a href="#" target="_blank"><i class="fa fa-facebook"></i> </a> </li>
-                                <li> <a href="#" target="_blank"><i class="fa fa-pinterest"></i> </a> </li>
-                                <li> <a href="#" target="_blank"><i class="fa fa-instagram"></i> </a> </li>
+                                <li> <a href="https://twitter.com/DantesEmbassy" target="_blank"><i class="fa fa-twitter"></i> </a> </li>
+                                <li> <a href="https://www.facebook.com/danteEmbassy" target="_blank"><i class="fa fa-facebook"></i> </a> </li>
+                                <li> <a href="https://it.pinterest.com/dantesembassy/" target="_blank"><i class="fa fa-pinterest"></i> </a> </li>
+                                <li> <a href="https://www.instagram.com/dantesembassy/" target="_blank"><i class="fa fa-instagram"></i> </a> </li>
                             </ul>
                         </li>
                     </ul>
@@ -129,19 +129,19 @@
                     <!-- Newsletter-->
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                      <form class="newsletterForm" action="php/mailchip/newsletter-subscribe.php">
+                      <form class="newsletterForm signin">
                         <div class="row">
                           <div class="col-md-4 col-md-offset-3">
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="fa fa-envelope"></i>
                                 </span>
-                                <input class="form-control" placeholder="Your  Email" name="email" type="email" required="required">
+                                <input class="form-control" placeholder="Your  Email" name="mail" type="mail" required="required">
                             </div>
                           </div>
                           <div class="col-md-2">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="submit" name="subscribe">SIGN UP</button>
+                                    <button class="btn btn-primary" type="submit" name="subscribe" onclick="return sendData(this)">SIGN UP</button>
                                 </span>
                           </div>
                         </div>
@@ -625,7 +625,7 @@
                                     <h2><span>Do you love Italy?</span>
                                       <br>Come and experience it with us!</h2>
                                 </div>
-                                <div class="twitter"></div>
+                                <div id="twitter"></div>
                             </div>
                         </div>
                     </div>
@@ -649,35 +649,29 @@
                         <!-- Sidebars -->
                         <div class="col-md-4">
                             <h3>FOLLOW US</h3>
-                            <ul class="social">
-                              <!--
-                              <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="#"></a></li>
-                              <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="#"></a></li>
-                              <li class="pinterest"><span><i class="fa fa-pinterest"></i></span><a href="#"></a></li>
-                              <li class=""><span><i class="fa fa-instagram fa-3x"></i></span><a href="#"></a></li>
--->
-                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-facebook fa-2x"></i> </a> </li>
-                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-twitter fa-2x"></i> </a> </li>
-                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-pinterest fa-2x"></i> </a> </li>
-                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-instagram fa-2x"></i> </a> </li>
+                            <ul class="social">                              
+                              <li> <a href="https://www.facebook.com/danteEmbassy" target="_blank" class="btn btn-default"><i class="fa fa-facebook fa-2x"></i> </a> </li>
+                              <li> <a href="https://twitter.com/DantesEmbassy" target="_blank" class="btn btn-default"><i class="fa fa-twitter fa-2x"></i> </a> </li>
+                              <li> <a href="https://it.pinterest.com/dantesembassy/" target="_blank" class="btn btn-default"><i class="fa fa-pinterest fa-2x"></i> </a> </li>
+                              <li> <a href="https://www.instagram.com/dantesembassy/" target="_blank" class="btn btn-default"><i class="fa fa-instagram fa-2x"></i> </a> </li>
 
                             </ul>
                           <hr class="tall">
                           <aside>
                             <h4>Recent instagram</h4>
-                            <ul id="flickr" class="thumbs"></ul>
+                            <ul id="instafeed" class="thumbs"></ul>
                           </aside>
                         </div>
                         <!-- End Sidebars -->
 
                         <div class="col-md-8">
                           <p class="lead"></p>
-                          <form id="form-contact" class="form-theme" action="php/send-mail.php">
-                            <input type="text" placeholder="Name" name="Name" required="">
-                            <input type="email" placeholder="Email" name="Email" required="">
-                            <input type="number" placeholder="Phone" name="Phone" required="">
-                            <textarea placeholder="Your Message" name="message" required=""></textarea>
-                            <input type="submit" name="Submit" value="Send Message" class="btn btn-primary">
+                          <form id="form-contact" class="form-theme" >
+                            <input type="text" placeholder="name" name="name" required="">
+                            <input type="email" placeholder="mail" name="mail" required="">
+                            <input type="number" placeholder="mobile" name="mobile">
+                            <textarea placeholder="Your Message" name="question"></textarea>
+                            <input type="submit" name="Submit" value="Send Message" class="btn btn-primary" onclick="return sendData(this)">
                           </form>
                           <div id="result"></div>
                         </div>
@@ -716,27 +710,19 @@
                                 <!-- Newsletter-->
                                 <div class="col-md-12">
                                     <h3>NEWSLETTER SIGN UP</h3>
-                                    <form class="newsletterForm" action="php/mailchip/newsletter-subscribe.php">
+                                    <form class="newsletterForm">
                                         <div class="row">
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="input-group">
                                                     <span class="input-group-addon">
                                                         <i class="fa fa-envelope"></i>
                                                     </span>
-                                                    <input class="form-control" placeholder="Your Name" name="name" type="text" required="required">
+                                                    <input class="form-control" placeholder="Your Name" name="mail" type="text" required="required">
                                                 </div>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-envelope"></i>
-                                                    </span>
-                                                    <input class="form-control" placeholder="Your  Email" name="email" type="email" required="required">
-                                                </div>
-                                            </div>
+                                            </div>                                           
                                             <div class="col-md-2">
                                                 <span class="input-group-btn">
-                                                    <button class="btn btn-primary" type="submit" name="subscribe">SIGN UP</button>
+                                                    <button class="btn btn-primary" type="submit" name="subscribe" onclick="return sendData(this)">SIGN UP</button>
                                                 </span>
                                             </div>
                                         </div>
@@ -750,10 +736,10 @@
                             <div class="col-md-12">
                               <h3>FOLLOW US</h3>
                               <ul class="social">
-                                <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="#">Facebook</a></li>
-                                <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="#">Twitter</a></li>
-                                <li class="pinterest"><span><i class="fa fa-pinterest"></i></span><a href="#">Pinterest</a></li>
-                                <li class="instagram"><span><i class="fa fa-instagram"></i></span><a href="#">Instagram</a></li>
+                                <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="https://www.facebook.com/danteEmbassy" target="_blank">Facebook</a></li>
+                                <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="https://twitter.com/DantesEmbassy" target="_blank">Twitter</a></li>
+                                <li class="pinterest"><span><i class="fa fa-pinterest"></i></span><a href="https://it.pinterest.com/dantesembassy/" target="_blank">Pinterest</a></li>
+                                <li class="instagram"><span><i class="fa fa-instagram"></i></span><a href="https://www.instagram.com/dantesembassy" target="_blank">Instagram</a></li>
                               </ul>
                             </div>
                             <!-- End Social Us-->
@@ -789,6 +775,23 @@
         </div>
         <!-- End layout-->
 
+
+        <!--MODAL-->
+        <div id="thanks" style="z-index:10000" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              
+              
+              <div class="modal-body">
+                <img src="img/logoDante.png" class="logo black" style="float:right;">
+                <H2 style="text-decoration: underline;">Grazie!</H2><p>Thanks very much! welcome to our family</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <!--/MODAL-->
+
         <!-- ======================= JQuery libs =========================== -->
         <!-- jQuery local-->
         <script src="js/jquery.js"></script>
@@ -811,9 +814,11 @@
         <!-- Filter -->
         <script src="js/filters/jquery.isotope.js" type="text/javascript"></script>
         <!-- Twitter Feed-->
-        <script src="js/twitter/jquery.tweet.js"></script>
+        <!--script src="js/twitter/jquery.tweet.js"></script-->
         <!-- flickr Feed-->
-        <script src="js/flickr/jflickrfeed.min.js"></script>
+        <!--script src="js/flickr/jflickrfeed.min.js"></script-->
+        <!--instagram feed-->
+        <script src="js/instafeed/instafeed.min.js"></script>
         <!--Theme Options-->
         <script type="text/javascript" src="js/theme-options/theme-options.js"></script>
         <script type="text/javascript" src="js/theme-options/jquery.cookies.js"></script>
@@ -827,22 +832,5 @@
         <script type="text/javascript" src="js/smoothslide/smoothslides-2.1.0.min.js"></script>
         <!-- ======================= End JQuery libs =========================== -->
 
-        <!--Slider Function-->
-        <!--script type="text/javascript">
-            jQuery(document).ready(function() {
-                  jQuery('.tp-banner').show().revolution({
-                    dottedOverlay:"none",
-                    delay:5000,
-                    onHoverStop:"off",
-                    startwidth:1170,
-                    startheight:925,
-                    minHeight:500,
-                    navigationType:"none",
-                    navigationArrows:"solo",
-                    navigationStyle:"preview1"
-                });
-            }); //ready
-        </script>
-        <!--End Slider Function-->
     </body>
 </html>
