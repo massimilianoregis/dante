@@ -53,13 +53,22 @@ $(document).ready(function($) {
   });
 
   //=================================== Flikr Feed  ========================================//
-  $('#flickr').jflickrfeed({
+  /*$('#flickr').jflickrfeed({
     limit: 8, //Number of images to be displayed
     qstrings: {
       id: '36587311@N08'//Change this to any Flickr Set ID as you prefer in http://idgettr.com/
     },
     itemTemplate: '<li><a href="{{image_b}}" class="fancybox"><img src="{{image_s}}" alt="{{title}}" /></a></li>'
-  });
+  });*/
+
+  //=================================== Instagram Feed  ========================================//
+   var feed = new Instafeed({
+        get: 'user',
+        userId: '4262357198',
+        accessToken: '4262357198.87b7c1a.77c0ebc72d0c4da08496566e7815b221',
+        template:'<li><a href="{{link}}" class="fancybox"><img src="{{image}}" alt="{{caption}}" /></a></li>'
+    });
+    feed.run();
 
   //=================================== Sticky nav ===================================//
 
