@@ -2166,8 +2166,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	width: 8px;
 	font-size: 0.7rem;
 }
-.social li:hover{
-	margin-left: 5px;
+.social li:hover{	
 	-webkit-transition: 0.2s all ease;
 	-moz-transition: 0.2s all ease;
 	-o-transition: 0.2s all ease;
