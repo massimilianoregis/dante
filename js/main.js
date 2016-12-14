@@ -45,13 +45,14 @@ $(document).ready(function($) {
 
 
 	//=================================== Twitter Feed  ===============================//
+  /*
   $("#twitter").tweet({
       modpath: 'js/twitter/index.php',
       username: "envato", // Change for Your Username
       count: 5,
       loading_text: "Loading tweets..."
   });
-
+*/
   //=================================== Flikr Feed  ========================================//
   /*$('#flickr').jflickrfeed({
     limit: 8, //Number of images to be displayed
