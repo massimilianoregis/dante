@@ -10,6 +10,31 @@
 // Email: support@iwthemes.com
 // Copyright: (C) 2015
 
+function result(data){  
+  $('#thanks').modal('show');
+  $('form.signin').hide();
+  setTimeout(function(){$('#thanks').modal('hide');},4000);
+}
+function sendData(form){
+  var form =$(form).parents("form")
+  var name = form.find("input[name=name]").val();
+  var mail = form.find("input[name=mail]").val();
+  var question = form.find("input[name=question]").val();
+  var mobile = form.find("input[name=mobile]").val();
+  $.ajax({
+    dataType:'jsonp',
+    url:'https://script.google.com/macros/s/AKfycbzmwo5IYPyZjOcy3SAazmfwv0uxPYS-m5yMrCaMIA7GWpAuSxk3/exec',
+    data:{
+      name:name,
+      mail:mail,
+      question:question,
+      mobile:mobile
+    },
+    jsonpCallback: "result"
+  })
+  return false;
+}
+
 $(document).ready(function($) {
 
 	'use strict';
