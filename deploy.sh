@@ -16,20 +16,20 @@ echo $lastCommit
 
 #filesChanged=$(git diff-tree --no-commit-id --name-only -r $lastCommit)
 baseDir = "dates"
-if [ "$TRAVIS_BRANCH" == "master" ] 
+if [ "$TRAVIS_BRANCH" == "master" ]
 then
 	baseDir="dantes"
 fi
 
-if [ "$TRAVIS_BRANCH" == "develop" ] 
+if [ "$TRAVIS_BRANCH" == "develop" ]
 then
-	baseDir="dantesTest"
+	baseDir="ekaros/dantesTest"
 fi
 
 initCommit=""
-initCommit=$(curl --ftp-create-dirs -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/$baseDir/lastCommit)
+initCommit=$(curl --ftp-create-dirs -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/$baseDir/lastCommit)
 echo $lastCommit > "lastCommit"
-curl --ftp-create-dirs -T lastCommit -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/$baseDir/lastCommit
+curl --ftp-create-dirs -T lastCommit -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/$baseDir/lastCommit
 
 echo "from "$initCommit
 echo "to   "$lastCommit
@@ -45,8 +45,8 @@ else
 		#do not upload these files that aren't necessary to the site
 		if [ "$f" != ".travis.yml" ] && [ "$f" != "deploy.sh" ] && [ "$f" != "test.js" ] && [ "$f" != "package.json" ]
 		then
-	 		echo "Uploading $f"	 		
-		 	curl --ftp-create-dirs -T $f -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/ekaros/$baseDir/$f		 	
+	 		echo "Uploading $f"
+		 	curl --ftp-create-dirs -T $f -u admin46091820:wnu6ub4d11 ftp://95.110.228.140//opt/tomcatProduzione/webapps/$baseDir/$f
 		fi
 	done
 fi
