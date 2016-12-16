@@ -745,6 +745,7 @@ hr.tall{
 	margin-left: -25%;
 	width: 50%;
 	z-index: 99;
+
 }
 .filter-title.top-30{
 	top: 30%;
@@ -2166,8 +2167,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	width: 8px;
 	font-size: 0.7rem;
 }
-.social li:hover{
-	margin-left: 5px;
+.social li:hover{	
 	-webkit-transition: 0.2s all ease;
 	-moz-transition: 0.2s all ease;
 	-o-transition: 0.2s all ease;
@@ -2249,17 +2249,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     overflow: hidden !important;
 }
 .status {
-    width: 16px;
-    height: 16px;
+    width: 200px;
+    height: 120px;
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url("../img/img-theme/preloader.gif");
+    background-image: url("../img/logoDante.png");
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
             background-size: cover;
-    margin: -20px 0 0 -20px;
+    margin: -60px 0 0 -100px;
 }
 /* Top ------------------------------------------------------------*/
 #toTop {
@@ -3660,4 +3660,67 @@ address strong{
 .widget .checkbox label{
 	font-size: 300;
 	font-size: 0.8rem;
+}
+
+/**
+ANIMATE.css
+**/
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.curtain{
+	position:absolute; 
+	left:0; 
+	right:0; 
+	top:0; 
+	bottom:0;
+	background:rgba(0,0,0,.5);
+	padding:5px;
+	z-index:10
 }

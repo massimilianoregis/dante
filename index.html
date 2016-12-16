@@ -41,7 +41,7 @@
     <body>
         <!--Preloader-->
         <div class="preloader">
-            <div class="status">&nbsp;</div>
+            <div class="status pulse animated infinite">&nbsp;</div>
         </div>
         <!--End Preloader-->
 
@@ -76,10 +76,10 @@
 
                         <li class="social-bar"> <a href="#">FOLLOW US</a>
                             <ul class="drop-down hover-zoom">
-                                <li> <a href="#" target="_blank"><i class="fa fa-twitter"></i> </a> </li>
-                                <li> <a href="#" target="_blank"><i class="fa fa-facebook"></i> </a> </li>
-                                <li> <a href="#" target="_blank"><i class="fa fa-pinterest"></i> </a> </li>
-                                <li> <a href="#" target="_blank"><i class="fa fa-instagram"></i> </a> </li>
+                                <li> <a href="https://twitter.com/DantesEmbassy" target="_blank"><i class="fa fa-twitter"></i> </a> </li>
+                                <li> <a href="https://www.facebook.com/danteEmbassy" target="_blank"><i class="fa fa-facebook"></i> </a> </li>
+                                <li> <a href="https://it.pinterest.com/dantesembassy/" target="_blank"><i class="fa fa-pinterest"></i> </a> </li>
+                                <li> <a href="https://www.instagram.com/dantesembassy/" target="_blank"><i class="fa fa-instagram"></i> </a> </li>
                             </ul>
                         </li>
                     </ul>
@@ -116,32 +116,41 @@
                 </div>
                  <!-- SLIDE CONTENT-->
 
+                <!--curtain-->
+                 <div class="curtain">
+                 </div>
+                 <!--/curtain-->
+
                 <!-- FILTER HEADER - TITLE HEADER-->
                 <div class="filter-title">
                     <!-- TITLE HEADER-->
                     <div class="title-header">
-                        <h1>Our Italy <i class="fa fa-heart"></i> YOUR Italy</h1>
-                        <p class="lead" style="display: none">Organizziamo il viaggio dei tuoi sogni, perchè ognuno desidera qualcosa di diverso. Cerca le tue passioni e vivile adesso! Noi possiamo solo... prometterti grandi emozioni!</p>
-                        <p class="lead">We organize the trip of your dreams, because everybody wants something different. Search your passions and live it now! <br>We can only promise you ... great emotions!</p>
+                        <h1>Our Italy <i class="fa fa-heart"></i> YOUR Italy</h1>                        
+                        <p class="lead">                        
+                        A journey is best measured in friends, rather than miles <I>(Tim Cahill)</I><BR><BR>
+
+                        We want you to meet your dreams, your past, your new friends.<BR>
+                        Because Italy isn't just a beautiful place<BR>
+                        </p>
                     </div>
                     <!-- END TITLE HEADER-->
                   <div class="row">
                     <!-- Newsletter-->
                     <div class="col-md-2"></div>
                     <div class="col-md-8">
-                      <form class="newsletterForm" action="php/mailchip/newsletter-subscribe.php">
+                      <form class="newsletterForm signin">
                         <div class="row">
                           <div class="col-md-4 col-md-offset-3">
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="fa fa-envelope"></i>
                                 </span>
-                                <input class="form-control" placeholder="Your  Email" name="email" type="email" required="required">
+                                <input class="form-control" placeholder="Your  Email" name="mail" type="mail" required="required">
                             </div>
                           </div>
                           <div class="col-md-2">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="submit" name="subscribe">SIGN UP</button>
+                                    <button class="btn btn-primary" type="submit" name="subscribe" onclick="return sendData(this)">SIGN UP</button>
                                 </span>
                           </div>
                         </div>
@@ -174,15 +183,18 @@
                                 <!-- Info Resalt - Info Services -->
                                 <div class="col-md-4 ">
                                     <div class="services-lines-info">
-                                        <h2>WELCOME to the Dante's Embassy</h2>
-                                        <p class="lead">
-                                          With us you will not try trips but emotions.
-                                          A new way to realize their dreams without forgetting that life is made up of memories, magic moments and happy encounters.
+                                        <p>WELCOME to:</p>
+                                        <h2>Dante's Embassy</h2>
+                                        <p class="lead">                          
+                                          A new way to discover the Italy: her people, her tastes, her scents, her sounds...<BR>
+                                          ...not just place but real life
                                           <span class="line"></span>
                                         </p>
                                         <p>
-                                          A trip is not just a logo to see, are flavors to taste, to know cultures, feelings to be collected in one's heart.
-                                          For this reason we want to meet you and you Embassy Dante advise you on your trip.
+                                          Are you looking for a dream?<BR>           
+                                          Don't be satisfied with something to see<BR>
+                                          we would like to show you the Italy from inside like an Italian<BR>
+                                          <H3>Welcome home!</H3>
                                         </p>
                                     </div>
                                 </div>
@@ -422,9 +434,7 @@
                                         <span>programming</span>
                                     </div>
                                     <div class="info-feature">
-                                        <p>We organize everything for you and will never leave you alone. Serene in any situation.</p>
-                                        <p style="display: none">Organiziamo tutto per te e non ti lasciamo mai solo. Sereni in ogni situazione.</p>
-
+                                        <p>We organize everything for you and will never leave you alone. <B>Just relax. Ever</B></p>
                                     </div>
                                 </div>
                             </div>
@@ -443,9 +453,9 @@
                                         <span>passion</span>
                                     </div>
                                     <div class="info-feature">
-                                        <p>We want you to live an emotion not only want you to do a trip. We have the passion to try and follow your passions.</p>
-                                        <p style="display: none">Vogliamo che tu viva un'emozione non solo che tu faccia un viaggio.
-                                          Abbiamo la passione per cercare e le tue passioni.</p>
+                                        <p>We want you to live an emotion.<BR>
+                                        And we are going to find the best experiences for you. <B>taylored for you</B></p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -453,18 +463,19 @@
                             <div class="col-md-4 text-center">
                                 <div class="item-feature text-center">
                                     <div class="head-feature">
-                                        <span>pays</span>
+                                        <span>friends</span>
                                         <br>
                                         <div class="title-feature">
                                             <i class="fa fa-check right-icon"></i>
-                                          price safe
+                                          Amici
                                         </div>
                                         <br>
-                                        <span>+ low</span>
+                                        <span>life</span>
                                     </div>
                                     <div class="info-feature">
-                                        <p style="display: none">Vogliamo rassicurarti sul tuo badget. Prezzi certi e gestione delle variabili.</p>
-                                        <p>We want to reassure you on your badget. certain and management of variables prices</p>
+                                        <p>you will have deep inside a lot of new friends.<BR>
+                                        <B>Travel never ends</B></p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -623,9 +634,9 @@
                             <div class="col-md-12">
                                 <div class="text-center titles">
                                     <h2><span>Do you love Italy?</span>
-                                      <br>Come and experience it with us!</h2>
+                                      <br>We too!</h2>
                                 </div>
-                                <div class="twitter"></div>
+                                <div id="twitter"></div>
                             </div>
                         </div>
                     </div>
@@ -649,35 +660,29 @@
                         <!-- Sidebars -->
                         <div class="col-md-4">
                             <h3>FOLLOW US</h3>
-                            <ul class="social">
-                              <!--
-                              <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="#"></a></li>
-                              <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="#"></a></li>
-                              <li class="pinterest"><span><i class="fa fa-pinterest"></i></span><a href="#"></a></li>
-                              <li class=""><span><i class="fa fa-instagram fa-3x"></i></span><a href="#"></a></li>
--->
-                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-facebook fa-2x"></i> </a> </li>
-                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-twitter fa-2x"></i> </a> </li>
-                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-pinterest fa-2x"></i> </a> </li>
-                              <li> <a href="#" target="_blank" class="btn btn-default"><i class="fa fa-instagram fa-2x"></i> </a> </li>
+                            <ul class="social">                              
+                              <li> <a href="https://www.facebook.com/danteEmbassy" target="_blank" class="btn btn-default"><i class="fa fa-facebook fa-2x"></i> </a> </li>
+                              <li> <a href="https://twitter.com/DantesEmbassy" target="_blank" class="btn btn-default"><i class="fa fa-twitter fa-2x"></i> </a> </li>
+                              <li> <a href="https://it.pinterest.com/dantesembassy/" target="_blank" class="btn btn-default"><i class="fa fa-pinterest fa-2x"></i> </a> </li>
+                              <li> <a href="https://www.instagram.com/dantesembassy/" target="_blank" class="btn btn-default"><i class="fa fa-instagram fa-2x"></i> </a> </li>
 
                             </ul>
                           <hr class="tall">
                           <aside>
                             <h4>Recent instagram</h4>
-                            <ul id="flickr" class="thumbs"></ul>
+                            <ul id="instafeed" class="thumbs"></ul>
                           </aside>
                         </div>
                         <!-- End Sidebars -->
 
                         <div class="col-md-8">
                           <p class="lead"></p>
-                          <form id="form-contact" class="form-theme" action="php/send-mail.php">
-                            <input type="text" placeholder="Name" name="Name" required="">
-                            <input type="email" placeholder="Email" name="Email" required="">
-                            <input type="number" placeholder="Phone" name="Phone" required="">
-                            <textarea placeholder="Your Message" name="message" required=""></textarea>
-                            <input type="submit" name="Submit" value="Send Message" class="btn btn-primary">
+                          <form id="form-contact" class="form-theme" >
+                            <input type="text" placeholder="name" name="name" required="">
+                            <input type="email" placeholder="mail" name="mail" required="">
+                            <input type="number" placeholder="mobile" name="mobile">
+                            <textarea placeholder="Your Message" name="question"></textarea>
+                            <input type="submit" name="Submit" value="Send Message" class="btn btn-primary" onclick="return sendData(this)">
                           </form>
                           <div id="result"></div>
                         </div>
@@ -703,8 +708,8 @@
                         <!-- Title Footer-->
                         <div class="col-md-5">
                             <div class="title-footer">
-                                <h2><span>Select Dante's Embassy Theme And Receive</span>
-                                <br> our news and discounts by e-mail.</h2>
+                                <h2><span>Dante's Embassy</span>
+                                <br>Stay in touch, amico.</h2>
                             </div>
                         </div>
                         <!-- End Title Footer-->
@@ -716,27 +721,19 @@
                                 <!-- Newsletter-->
                                 <div class="col-md-12">
                                     <h3>NEWSLETTER SIGN UP</h3>
-                                    <form class="newsletterForm" action="php/mailchip/newsletter-subscribe.php">
+                                    <form class="newsletterForm">
                                         <div class="row">
-                                            <div class="col-md-5">
+                                            <div class="col-md-6">
                                                 <div class="input-group">
                                                     <span class="input-group-addon">
                                                         <i class="fa fa-envelope"></i>
                                                     </span>
-                                                    <input class="form-control" placeholder="Your Name" name="name" type="text" required="required">
+                                                    <input class="form-control" placeholder="Your Name" name="mail" type="text" required="required">
                                                 </div>
-                                            </div>
-                                            <div class="col-md-5">
-                                                <div class="input-group">
-                                                    <span class="input-group-addon">
-                                                        <i class="fa fa-envelope"></i>
-                                                    </span>
-                                                    <input class="form-control" placeholder="Your  Email" name="email" type="email" required="required">
-                                                </div>
-                                            </div>
+                                            </div>                                           
                                             <div class="col-md-2">
                                                 <span class="input-group-btn">
-                                                    <button class="btn btn-primary" type="submit" name="subscribe">SIGN UP</button>
+                                                    <button class="btn btn-primary" type="submit" name="subscribe" onclick="return sendData(this)">SIGN UP</button>
                                                 </span>
                                             </div>
                                         </div>
@@ -750,10 +747,10 @@
                             <div class="col-md-12">
                               <h3>FOLLOW US</h3>
                               <ul class="social">
-                                <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="#">Facebook</a></li>
-                                <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="#">Twitter</a></li>
-                                <li class="pinterest"><span><i class="fa fa-pinterest"></i></span><a href="#">Pinterest</a></li>
-                                <li class="instagram"><span><i class="fa fa-instagram"></i></span><a href="#">Instagram</a></li>
+                                <li class="facebook"><span><i class="fa fa-facebook"></i></span><a href="https://www.facebook.com/danteEmbassy" target="_blank">Facebook</a></li>
+                                <li class="twitter"><span><i class="fa fa-twitter"></i></span><a href="https://twitter.com/DantesEmbassy" target="_blank">Twitter</a></li>
+                                <li class="pinterest"><span><i class="fa fa-pinterest"></i></span><a href="https://it.pinterest.com/dantesembassy/" target="_blank">Pinterest</a></li>
+                                <li class="instagram"><span><i class="fa fa-instagram"></i></span><a href="https://www.instagram.com/dantesembassy" target="_blank">Instagram</a></li>
                               </ul>
                             </div>
                             <!-- End Social Us-->
@@ -789,6 +786,23 @@
         </div>
         <!-- End layout-->
 
+
+        <!--MODAL-->
+        <div id="thanks" style="z-index:10000" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              
+              
+              <div class="modal-body">
+                <img src="img/logoDante.png" class="logo black" style="float:right;">
+                <H2 style="text-decoration: underline;">Grazie!</H2><p>Thanks very much! welcome to our family</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <!--/MODAL-->
+
         <!-- ======================= JQuery libs =========================== -->
         <!-- jQuery local-->
         <script src="js/jquery.js"></script>
@@ -811,9 +825,11 @@
         <!-- Filter -->
         <script src="js/filters/jquery.isotope.js" type="text/javascript"></script>
         <!-- Twitter Feed-->
-        <script src="js/twitter/jquery.tweet.js"></script>
+        <!--script src="js/twitter/jquery.tweet.js"></script-->
         <!-- flickr Feed-->
-        <script src="js/flickr/jflickrfeed.min.js"></script>
+        <!--script src="js/flickr/jflickrfeed.min.js"></script-->
+        <!--instagram feed-->
+        <script src="js/instafeed/instafeed.min.js"></script>
         <!--Theme Options-->
         <script type="text/javascript" src="js/theme-options/theme-options.js"></script>
         <script type="text/javascript" src="js/theme-options/jquery.cookies.js"></script>
@@ -827,22 +843,5 @@
         <script type="text/javascript" src="js/smoothslide/smoothslides-2.1.0.min.js"></script>
         <!-- ======================= End JQuery libs =========================== -->
 
-        <!--Slider Function-->
-        <!--script type="text/javascript">
-            jQuery(document).ready(function() {
-                  jQuery('.tp-banner').show().revolution({
-                    dottedOverlay:"none",
-                    delay:5000,
-                    onHoverStop:"off",
-                    startwidth:1170,
-                    startheight:925,
-                    minHeight:500,
-                    navigationType:"none",
-                    navigationArrows:"solo",
-                    navigationStyle:"preview1"
-                });
-            }); //ready
-        </script>
-        <!--End Slider Function-->
     </body>
 </html>
