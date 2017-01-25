@@ -41,7 +41,49 @@ $(document).ready(function($) {
 
   $('#myslideshow1').smoothSlides({navigation:false});
 
+  //------------auth0------------
+   var lock = new Auth0Lock('mgb81nZyXlY12MIGee2K6E8JMnTYYnVL', 'ekaros.auth0.com', {
+    auth: { 
+      params: { 
+        scope: 'openid email' 
+      }
+    },
+    theme: {
+            logo:            'http://www.dantesembassy.com/img/logoDante.png',
+            primaryColor:    'black'
+          },
+  });
+  logged(localStorage.getItem('id_token'));
+  $('.btn-login').click(function(e) {    
+    e.preventDefault();
+    lock.show();
+  });
+  $('.btn-logout').click(function(e) {    
+    e.preventDefault();
+    localStorage.removeItem('id_token');
+    $('.btn-login').show();      
+    $('.avatar').hide();
+  });  
 
+  lock.on("authenticated", (authResult)=>logged(authResult.idToken));
+  function logged(token) {
+    if(token==null) return;
+    lock.getProfile(token, function(error, profile) {
+      if (error) {
+        // Handle error
+        return;
+      }
+
+      localStorage.setItem('id_token', token);
+
+      // Display user information
+      $('.nickname').text(profile.nickname);
+      $('.btn-login').hide();
+      $('.avatar img').attr('src', profile.picture);
+      $('.avatar').show();
+    });
+  };
+  //------------/auth0------------
 
 
 	//=================================== Twitter Feed  ===============================//
@@ -63,6 +105,7 @@ $(document).ready(function($) {
   });*/
 
   //=================================== Instagram Feed  ========================================//
+try{
    var feed = new Instafeed({
         get: 'user',
         userId: '4262357198',
@@ -70,7 +113,7 @@ $(document).ready(function($) {
         template:'<li><a href="{{link}}" class="fancybox"><img src="{{image}}" alt="{{caption}}" /></a></li>'
     });
     feed.run();
-
+}catch(e){}
   //=================================== Sticky nav ===================================//
 
   $("#header").sticky({topSpacing:0});
