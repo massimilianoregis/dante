@@ -43,14 +43,18 @@ $(document).ready(function($) {
 
   //------------auth0------------
    var lock = new Auth0Lock('mgb81nZyXlY12MIGee2K6E8JMnTYYnVL', 'ekaros.auth0.com', {
+        
     auth: { 
       params: { 
         scope: 'openid email' 
       }
     },
+    languageDictionary: {
+      title: "Dante's Embassy"
+    },
     theme: {
             logo:            'http://www.dantesembassy.com/img/logoDante.png',
-            primaryColor:    'black'
+            primaryColor:    'black'            
           },
   });
   logged(localStorage.getItem('id_token'));
