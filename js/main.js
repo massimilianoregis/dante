@@ -42,11 +42,20 @@ $(document).ready(function($) {
   $('#myslideshow1').smoothSlides({navigation:false});
 
   //------------auth0------------
+  $.ajaxSetup({
+    'beforeSend': function(xhr) {
+      if (localStorage.getItem('id_token')) {
+        xhr.setRequestHeader('Authorization',
+          'Bearer ' + localStorage.getItem('id_token'));
+      }
+    }
+  });
+
    var lock = new Auth0Lock('mgb81nZyXlY12MIGee2K6E8JMnTYYnVL', 'ekaros.auth0.com', {
         
     auth: { 
       params: { 
-        scope: 'openid email' 
+        scope: 'openid email app_metadata picture' 
       }
     },
     languageDictionary: {
