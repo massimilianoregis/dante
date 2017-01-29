@@ -1,0 +1,1431 @@
+@import url("icons/font-awesome.min.css");
+
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	margin: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+	display: block;
+}
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+template {
+	display: none;
+}
+a {
+	background: transparent;
+}
+a:active, a:hover {
+	outline: 0;
+}
+b, strong {
+	font-weight: bold;
+}
+dfn {
+	font-style: italic;
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+mark {
+	background: #ff0;
+	color: #000;
+}
+small {
+	font-size: 80%;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+img {
+	border: 0;
+}
+figure {
+	margin: 1em 40px;
+}
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+pre {
+	overflow: auto;
+}
+code, kbd, pre, samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+button {
+	overflow: visible;
+}
+button, select {
+	text-transform: none;
+}
+button {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+input {
+	line-height: normal;
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+legend {
+	border: 0;
+	padding: 0;
+}
+textarea {
+	overflow: auto;
+}
+optgroup {
+	font-weight: bold;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+td, th {
+	padding: 0;
+}
+
+
+/** 
+ * ===================================================================
+ * 02. basic/base setup styles - (_basic.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+body {
+	font-weight: normal;
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	word-wrap: break-word;
+	-webkit-overflow-scrolling: touch;
+	-webkit-text-size-adjust: none;
+}
+body, input, button {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Media - (_basic.scss)
+ * ------------------------------------------------------------------- 
+ */
+
+img, video {
+	max-width: 100%;
+	height: auto;
+}
+
+/**
+ * Typography resets - (_basic.scss)
+ * ------------------------------------------------------------------- 
+ */
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	-webkit-font-variant-ligatures: common-ligatures;
+	-moz-font-variant-ligatures: common-ligatures;
+	font-variant-ligatures: common-ligatures;
+	text-rendering: optimizeLegibility;
+}
+em, i {
+	font-style: italic;
+	line-height: inherit;
+}
+strong, b {
+	font-weight: bold;
+	line-height: inherit;
+}
+small {
+	font-size: 60%;
+	line-height: inherit;
+}
+ol, ul {
+	list-style: none;
+}
+li {
+	display: block;
+}
+
+/**
+ * links - (_basic.scss)
+ * ------------------------------------------------------------------- 
+ */
+
+a {
+	text-decoration: none;
+	line-height: inherit;
+}
+
+/**
+ * inputs - (_basic.scss)
+ * ------------------------------------------------------------------- 
+ */
+
+fieldset {
+	margin: 0;
+	padding: 0;
+}
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+
+/** 
+ * ===================================================================
+ * 03. grid - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+.row {
+	width: 94%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear: both;
+}
+
+[class*="col-"] {
+	float: left;
+}
+[class*="col-"] {
+	padding: 0 20px;
+}
+
+.col-five {
+	width: 41.66667%;
+}
+.col-seven {
+	width: 58.33333%;
+}
+.col-twelve {
+	width: 100%;
+}
+
+/**
+ * small screens - (_grid.scss)
+ * --------------------------------------------------------------- 
+ */
+
+@media screen and (max-width:1024px) {
+	[class*="col-"] {
+		padding: 0 18px;
+	}
+}
+
+/**
+ * tablets - (_grid.scss)
+ * --------------------------------------------------------------- 
+ */
+
+@media screen and (max-width:768px) {
+	.row {
+		width: auto;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	[class*="col-"] {
+		padding: 0 15px;
+	}
+	.tab-full {
+		width: 100%;
+	}
+}
+
+/**
+ * large mobile devices - (_grid.scss)
+ * --------------------------------------------------------------- 
+ */
+
+@media screen and (max-width:600px) {
+	.row {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	[class*="col-"] {
+		padding: 0 10px;
+	}
+}
+
+/**
+ * small mobile devices - (_grid.scss)
+ * --------------------------------------------------------------- 
+ */
+
+@media screen and (max-width:400px) {
+	[class*="col-"] {
+		width: 100% !important;
+		float: none !important;
+		clear: both !important;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+	}
+}
+
+/** 
+ * ===================================================================
+ * block grids - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+
+/**
+ * Clearing for block grid columns. Allow columns with 
+ * different heights to align properly.
+ */
+
+
+/**
+ * small screens - (_grid.scss)
+ * --------------------------------------------------------------- 
+ */
+
+@media screen and (max-width:1024px) {
+
+}
+
+/**
+ * tablets - (_grid.scss)
+ * --------------------------------------------------------------- 
+ */
+
+@media screen and (max-width:768px) {
+
+}
+
+/**
+ * large mobile devices - (_grid.scss)
+ * --------------------------------------------------------------- 
+ */
+
+@media screen and (max-width:600px) {
+
+}
+
+/**
+ * stack on small mobile devices - (_grid.scss)
+ * --------------------------------------------------------------- 
+ */
+
+
+/** 
+ * ===================================================================
+ * 04. MISC  - (_grid.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+/**
+ * Clearing - (http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+
+
+/**
+ * Misc Helper Styles 
+ */
+
+.pull-right {
+	float: right;
+}
+
+/*# sourceMappingURL=base.css.map */
+
+
+
+/** 
+ * ===================================================================
+ * 02. base style overrides - (_document-setup.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+html {
+	font-size: 10px;
+}
+
+@media only screen and (max-width:1024px) {
+	html {
+		font-size: 9.375px;
+	}
+}
+@media only screen and (max-width:768px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width:400px) {
+	html {
+		font-size: 9.375px;
+	}
+}
+
+html, body {
+	height: 100%;
+}
+body {
+	background: #151515;
+	font-family: "roboto-regular", sans-serif;
+	font-size: 1.6rem;
+	line-height: 3rem;
+	color: #6e6e6e;
+}
+
+
+/**
+ * links - (_document-setup.scss)
+ * ------------------------------------------------------------------- 
+ */
+
+a, a:visited {
+	color: #FFFFFF;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+a:hover, a:focus {
+	color: #c25d02;
+}
+
+/** 
+ * ===================================================================
+ * 03. typography & general theme styles - (_document-setup.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "roboto-bold", sans-serif;
+	color: #FFFFFF;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	margin-bottom: 2.1rem;
+}
+h3, h4 {
+	margin-bottom: 1.8rem;
+}
+h5, h6 {
+	font-family: "roboto-black";
+	margin-bottom: 1.2rem;
+}
+h1 {
+	font-size: 3.1rem;
+	line-height: 1.35;
+	letter-spacing: -.1rem;
+}
+@media only screen and (max-width:600px) {
+	h1 {
+		font-size: 2.6rem;
+		letter-spacing: -.07rem;
+	}
+}
+h2 {
+	font-size: 2.4rem;
+	line-height: 1.25;
+}
+h3 {
+	font-size: 2rem;
+	line-height: 1.5;
+}
+h4 {
+	font-size: 1.7rem;
+	line-height: 1.76;
+}
+h5 {
+	font-size: 1.4rem;
+	line-height: 1.7;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+}
+h6 {
+	font-size: 1.3rem;
+	line-height: 1.85;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+}
+em, i, strong, b {
+	font-size: 1.6rem;
+	line-height: 3rem;
+	font-style: normal;
+	font-weight: normal;
+}
+em, i {
+	font-family: "roboto-thin", serif;
+}
+strong, b {
+	font-family: "roboto-bold", serif;
+}
+small {
+	font-size: 1.1rem;
+	line-height: inherit;
+}
+blockquote {
+	margin: 3rem 0;
+	padding-left: 4rem;
+	position: relative;
+}
+blockquote:before {
+	content: "\201C";
+	font-size: 8rem;
+	line-height: 0px;
+	margin: 0;
+	color: #333;
+	font-family: arial, sans-serif;
+	position: absolute;
+	top: 3rem;
+	left: 0;
+}
+abbr {
+	font-family: "roboto-bold", serif;
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: .05rem;
+	color: #888888;
+}
+var, kbd, samp, code, pre {
+	font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+}
+pre {
+	padding: 2.4rem 3rem 3rem;
+	background: #F1F1F1;
+}
+code {
+	font-size: 1.4rem;
+	margin: 0 .2rem;
+	padding: .3rem .6rem;
+	white-space: nowrap;
+	background: #F1F1F1;
+	border: 1px solid #E1E1E1;
+	border-radius: 3px;
+}
+del {
+	text-decoration: line-through;
+}
+mark {
+	background: #FFF49B;
+	color: #000;
+}
+hr {
+	border: solid #d2d2d2;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 2.4rem 0 1.5rem;
+	height: 0;
+}
+
+/**
+ * Lists - (_document-setup.scss)  
+ * ------------------------------------------------------------------- 
+ */
+
+ol {
+	list-style: decimal;
+}
+ul {
+	list-style: disc;
+}
+li {
+	display: list-item;
+}
+ol, ul {
+	margin-left: 1.7rem;
+}
+ul li {
+	padding-left: .4rem;
+}
+dt {
+	margin: 0;
+	color: #c25d02;
+}
+dd {
+	margin: 0 0 0 2rem;
+}
+
+/**
+ * Spacing - (_document-setup.scss)  
+ * ------------------------------------------------------------------- 
+ */
+
+button {
+	margin-bottom: 1.2;
+}
+fieldset {
+	margin-bottom: 1.5rem;
+}
+input,
+textarea,
+select,
+pre,
+blockquote,
+figure,
+table,
+p,
+ul,
+ol,
+dl,
+form {
+	margin-bottom: 3rem;
+}
+
+/**
+ * floated image - (_document-setups.css)  
+ * ------------------------------------------------------------------- 
+ */
+
+
+
+/** 
+ * ===================================================================
+ * 04. preloader - (_preloader-1.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #050505;
+	z-index: 800;
+	height: 100%;
+	width: 100%;
+}
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	padding: 0;
+}
+
+@-webkit-keyframes load {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes load {
+	0% {
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+
+/** 
+ * ===================================================================
+ * 05. forms - (_forms.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+fieldset {
+	border: none;
+}
+textarea,
+select {
+	display: block;
+	height: 6rem;
+	padding: 1.5rem 2rem;
+	border: 0;
+	outline: none;
+	vertical-align: middle;
+	color: rgba(255, 255, 255, 0.8);
+	font-family: "roboto-regular", sans-serif;
+	font-size: 1.5rem;
+	line-height: 3rem;
+	max-width: 100%;
+	background: transparent;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.ss-custom-select select::-ms-expand {
+	display: none;
+}
+
+/* IE9 and below */
+textarea {
+	min-height: 25rem;
+}
+textarea:focus,
+select:focus {
+	color: #FFFFFF;
+}
+label, legend {
+	font-family: "roboto-bold", sans-serif;
+	font-size: 1.4rem;
+	margin-bottom: .6rem;
+	color: #3b3b3b;
+	display: block;
+}
+
+/**
+ * Style Placeholder Text  
+ * ------------------------------------------------------------------- 
+ */
+
+::-webkit-input-placeholder {
+	color: #a1a1a1;
+}
+:-moz-placeholder {
+	color: #a1a1a1;  /* Firefox 18- */
+}
+::-moz-placeholder {
+	color: #a1a1a1;  /* Firefox 19+ */
+}
+:-ms-input-placeholder {
+	color: #a1a1a1;
+}
+
+
+/** 
+ * ===================================================================
+ * 06. header styles - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+header {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 700;
+	background: transparent;
+
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+
+	-moz-transition: transform 0.4s ease-in-out;
+	-o-transition: transform 0.4s ease-in-out;
+	-webkit-transition: transform 0.4s ease-in-out;
+	-ms-transition: transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+header .row {
+	height: auto;
+	position: relative;
+}
+
+/** 
+ * header logo - (_layout.css) 
+ * ------------------------------------------------------------------- 
+ */
+
+header .logo {
+	position: absolute;
+	left: 26px;
+	top: 0;
+	margin-top: 78px;
+}
+header .logo a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: none;
+	width: 282px;
+	height: 72px;
+	background: url("http://www.dantesembassy.com/img/logoDante.png") no-repeat center;
+	background-size: 282px 72px;
+
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+/**
+ * menu toggle - (_layout.css)
+ * ------------------------------------------------------------------- 
+ */
+
+/* is clicked */
+
+/**
+ * responsive - header section
+ * ------------------------------------------------------------------- 
+ */
+
+@media only screen and (max-width:1024px) {
+	header .logo {
+		left: 24px;
+		margin-top: 60px;
+	}
+	header .logo a {
+		width: 247px;
+		height: 63px;
+		background-size: 247px 63px;
+	}
+}
+@media only screen and (max-width:768px) {
+	header .logo {
+		left: 51px;
+		margin-top: 48px;
+	}
+	header .logo a {
+		width: 235px;
+		height: 60px;
+		background-size: 235px 60px;
+	}
+}
+@media only screen and (max-width:600px) {
+	header .logo {
+		left: 41px;
+	}
+	header .logo a {
+		width: 212px;
+		height: 54px;
+		background-size: 212px 54px;
+	}
+}
+@media only screen and (max-width:400px) {
+	header .logo {
+		left: 28px;
+		margin-top: 19px;
+	}
+	header .logo a {
+		width: 165px;
+		height: 42px;
+		background-size: 165px 42px;
+	}
+}
+
+
+/** 
+ * ===================================================================
+ * 07. off-canvas menu - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+
+
+/** 
+ * ===================================================================
+ * 08. main-404-content - (_layout.scss)
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+#main-404-content {
+	background: #151515;
+	width: 100%;
+	height: 100%;
+	min-height: 720px;
+	z-index: 600;
+	position: relative;
+
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+
+	-moz-transition: transform 0.4s ease-in-out;
+	-o-transition: transform 0.4s ease-in-out;
+	-webkit-transition: transform 0.4s ease-in-out;
+	-ms-transition: transform 0.4s ease-in-out;
+	transition: transform 0.4s ease-in-out;
+}
+
+/* static background */
+#main-404-content.main-content-static {
+	background-image: url(../img/greens.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+/* slideshow background */
+
+/* particle background */
+
+
+.content-wrap {
+	width: 100%;
+	height: 100%;
+	display: table;
+	position: relative;
+}
+.shadow-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .9;
+
+	background: -moz-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);  /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, black 0%, black 20%, transparent 100%);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);  /* IE6-9 */
+}
+.main-content {
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+	z-index: 700;  
+}
+.main-content h1 {
+	font-family: "roboto-black", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: -.2rem;
+	font-size: 9.4rem;
+	line-height: 1;
+	margin-bottom: 1.2rem;
+	padding-top: 2.4rem;
+	position: relative;
+}
+.main-content h1::before {
+	content: "";
+	display: block;
+	background: #c25d02;
+	width: 120px;
+	height: 3px;
+	position: absolute;
+	top: 0;
+	left: 9px;
+}
+
+
+/* CSS styles for kerning. See lettering.js website for details:
+ * https://github.com/davatron5000/Lettering.js
+ * if you dont want to apply kerning, just remove the "kern-this" class
+ * on the h1 tag in the html file.
+ */
+
+.main-content .kern-this [class*="char"] {
+	position: relative;
+}
+.main-content .char3 {
+	left: -0.01em;    /* "4" */
+}
+
+
+.main-content p {
+	color: rgba(255, 255, 255, 0.3);
+	font-family: "roboto-regular", sans-serif;
+	font-size: 1.8rem;
+	max-width: 380px;
+	text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+#main-404-content footer {
+	position: absolute;
+	width: 100%;
+	min-height: 12rem;
+	bottom: 0;
+	left: 0;
+	z-index: 700;
+}
+
+/* social links */
+#main-404-content .social-links {
+	text-align: right;
+	margin-bottom: 3rem;
+}
+#main-404-content .social-links ul {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 3rem;
+}
+#main-404-content .social-links ul li {
+	display: inline-block;
+	padding: 0 .9rem;
+}
+#main-404-content .social-links ul li:last-child {
+	padding-right: 0;
+}
+
+/* bottom links */
+#main-404-content .bottom-links .links {
+	display: block;
+	list-style: none;
+	margin: 0 0 .9rem 0;
+	padding: 0;
+	font-family: "roboto-bold", sans-serif;
+	font-size: 1.7rem;
+}
+#main-404-content .bottom-links .links:before,
+#main-404-content .bottom-links .links:after {
+	content: "";
+	display: table;
+}
+#main-404-content .bottom-links .links:after {
+	clear: both;
+}
+#main-404-content .bottom-links li {
+	float: left;
+	padding: 0 1.2rem;
+}
+#main-404-content .bottom-links li:first-child {
+	padding-left: 0;
+}
+#main-404-content .bottom-links .credits {
+	font-size: 1.4rem;
+	line-height: 3rem;
+	color: rgba(255, 255, 255, 0.2);
+}
+
+/**
+ * responsive - main-404-content
+ * ------------------------------------------------------------------- 
+ */
+ 
+@media only screen and (max-width:1024px) {
+	.main-content h1 {
+		font-size: 8.6rem;
+	}
+}
+@media only screen and (max-width:768px) {
+	.main-content h1 {
+		font-size: 7.2rem;
+	}
+	#main-404-content .social-links {
+		text-align: left;
+	}
+	#main-404-content .social-links ul {
+		font-size: 2.8rem;
+	}
+	#main-404-content .social-links li:first-child {
+		padding-left: 0;
+	}
+	#main-404-content .bottom-links .links {
+		font-size: 1.6rem;
+	}
+}
+@media only screen and (max-width:600px) {
+	.main-content h1 {
+		font-size: 6.2rem;
+	}
+}
+@media only screen and (max-width:400px) {
+	.main-content h1 {
+		font-size: 5.5rem;
+	}
+	#main-404-content .social-links ul {
+		font-size: 2.6rem;
+	}
+}
+@media only screen and (max-width:380px) {
+	.main-content h1 {
+		font-size: 5.2rem;
+	}
+}
+
+/* Preloader --------------------------------------------------------*/
+.status {
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url("http://www.dantesembassy.com/img/logoDante.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    margin: -60px 0 0 -100px;
+}
+
+:root body.vegas-container > .vegas-overlay,
+:root body.vegas-container > .vegas-slide,
+_::full-page-media,
+_:future {
+	bottom: -76px;
+}
+
+@-webkit-keyframes kenburns {
+	0% {
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+}
+
+@keyframes kenburns {
+	0% {
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+}
+
+@-webkit-keyframes kenburnsUp {
+	0% {
+		-webkit-transform: scale(1.5) translate(0, 10%);
+		transform: scale(1.5) translate(0, 10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@keyframes kenburnsUp {
+	0% {
+		-webkit-transform: scale(1.5) translate(0, 10%);
+		transform: scale(1.5) translate(0, 10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@-webkit-keyframes kenburnsDown {
+	0% {
+		-webkit-transform: scale(1.5) translate(0, -10%);
+		transform: scale(1.5) translate(0, -10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@keyframes kenburnsDown {
+	0% {
+		-webkit-transform: scale(1.5) translate(0, -10%);
+		transform: scale(1.5) translate(0, -10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@-webkit-keyframes kenburnsLeft {
+	0% {
+		-webkit-transform: scale(1.5) translate(10%, 0);
+		transform: scale(1.5) translate(10%, 0);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@keyframes kenburnsLeft {
+	0% {
+		-webkit-transform: scale(1.5) translate(10%, 0);
+		transform: scale(1.5) translate(10%, 0);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@-webkit-keyframes kenburnsRight {
+	0% {
+		-webkit-transform: scale(1.5) translate(-10%, 0);
+		transform: scale(1.5) translate(-10%, 0);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@keyframes kenburnsRight {
+	0% {
+		-webkit-transform: scale(1.5) translate(-10%, 0);
+		transform: scale(1.5) translate(-10%, 0);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@-webkit-keyframes kenburnsUpLeft {
+	0% {
+		-webkit-transform: scale(1.5) translate(10%, 10%);
+		transform: scale(1.5) translate(10%, 10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@keyframes kenburnsUpLeft {
+	0% {
+		-webkit-transform: scale(1.5) translate(10%, 10%);
+		transform: scale(1.5) translate(10%, 10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@-webkit-keyframes kenburnsUpRight {
+	0% {
+		-webkit-transform: scale(1.5) translate(-10%, 10%);
+		transform: scale(1.5) translate(-10%, 10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@keyframes kenburnsUpRight {
+	0% {
+		-webkit-transform: scale(1.5) translate(-10%, 10%);
+		transform: scale(1.5) translate(-10%, 10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@-webkit-keyframes kenburnsDownLeft {
+	0% {
+		-webkit-transform: scale(1.5) translate(10%, -10%);
+		transform: scale(1.5) translate(10%, -10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@keyframes kenburnsDownLeft {
+	0% {
+		-webkit-transform: scale(1.5) translate(10%, -10%);
+		transform: scale(1.5) translate(10%, -10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@-webkit-keyframes kenburnsDownRight {
+	0% {
+		-webkit-transform: scale(1.5) translate(-10%, -10%);
+		transform: scale(1.5) translate(-10%, -10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+@keyframes kenburnsDownRight {
+	0% {
+		-webkit-transform: scale(1.5) translate(-10%, -10%);
+		transform: scale(1.5) translate(-10%, -10%);
+	}
+
+	100% {
+		-webkit-transform: scale(1) translate(0, 0);
+		transform: scale(1) translate(0, 0);
+	}
+
+}
+
+
+@font-face {
+    font-family: 'roboto-black';
+    src: url('fonts/roboto/roboto-black-webfont.eot');
+    src: url('fonts/roboto/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-black-webfont.woff2') format('woff2'),
+         url('fonts/roboto/roboto-black-webfont.woff') format('woff'),
+         url('fonts/roboto/roboto-black-webfont.ttf') format('truetype'),
+         url('fonts/roboto/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('fonts/roboto/roboto-bold-webfont.eot');
+    src: url('fonts/roboto/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto/roboto-bold-webfont.woff') format('woff'),
+         url('fonts/roboto/roboto-bold-webfont.ttf') format('truetype'),
+         url('fonts/roboto/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-light';
+    src: url('fonts/roboto/roboto-light-webfont.eot');
+    src: url('fonts/roboto/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-light-webfont.woff2') format('woff2'),
+         url('fonts/roboto/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto/roboto-light-webfont.ttf') format('truetype'),
+         url('fonts/roboto/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-medium';
+    src: url('fonts/roboto/roboto-medium-webfont.eot');
+    src: url('fonts/roboto/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-medium-webfont.woff2') format('woff2'),
+         url('fonts/roboto/roboto-medium-webfont.woff') format('woff'),
+         url('fonts/roboto/roboto-medium-webfont.ttf') format('truetype'),
+         url('fonts/roboto/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('fonts/roboto/roboto-regular-webfont.eot');
+    src: url('fonts/roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto/roboto-regular-webfont.woff') format('woff'),
+         url('fonts/roboto/roboto-regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-thin';
+    src: url('fonts/roboto/roboto-thin-webfont.eot');
+    src: url('fonts/roboto/roboto-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/roboto-thin-webfont.woff2') format('woff2'),
+         url('fonts/roboto/roboto-thin-webfont.woff') format('woff'),
+         url('fonts/roboto/roboto-thin-webfont.ttf') format('truetype'),
+         url('fonts/roboto/roboto-thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
